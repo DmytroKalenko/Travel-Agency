@@ -3,637 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="/css/a.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
 </head>
-
+    <div class="header">
+        <img src="/img/bg.jpg" alt="">
+    </div>
+    <section>
+        <div class="wrapper">
+            <div class="content">
+                <h3>Where you want to go?</h3>
+                <input type="search" name="" id="">
+                <div class="buttoms">
+                    <div class="pages">
+                        <input type="button" value="Journey">
+                        <input type="button" value="Travelers">
+                        <input type="button" value="Guide">
+                    </div>
+                    <div class="empty"></div>
+                    <div class="citys">
+                        <input type="button" value="Mazury">
+                        <input type="button" value="Cracow">
+                        <input type="button" value="Zakopane">
+                    </div>
+                </div>
+                <div class="offers">
+                    <div class="item">
+                        <img src="/img/Poznan.png" alt="Poznan">
+                        <h3>Poznan</h3>
+                        <p>Wielkopolskie</p>
+                        <input type="button" value="VIEW OFFERS">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Warszawa.png" alt="Warsaw">
+                        <h3>Warsaw</h3>
+                        <p>Mazowieckie</p>
+                        <input type="button" value="VIEW OFFERS">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Wroclaw.png" alt="Wroclaw">
+                        <h3>Wroclaw</h3>
+                        <p>Dolnoslaskie</p>
+                        <input type="button" value="VIEW OFFERS">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Karpacz.png" alt="Karpacz">
+                        <h3>Karpacz</h3>
+                        <p>Dolnoslaskie</p>
+                        <input type="button" value="VIEW OFFERS">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Dolina Olczyska.png" alt="Dolina Olczyska">
+                        <h3>Dolina Olczyska</h3>
+                        <p>Malopolskie</p>
+                        <input type="button" value="VIEW OFFERS">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Kozy.png" alt="Kozy">
+                        <h3>Kozy</h3>
+                        <p>Slaskie</p>
+                        <input type="button" value="VIEW OFFERS">
+                    </div>
+                </div>
+                <div class="aboutcity">
+                    <h3>Explore city</h3>
+                    <img src="" alt="">
+                    <h2>Sandomierz</h2>
+                    <p>Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes. <br> <br>
+                        The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.
+                        </p>
+                    <input type="button" value="">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <body>
-    <div class="pops">
-        <div class="popup" id="popupform">
-            <h1>Бронирование места</h1>
-            <h3>Введите данные</h3>
-            <p>1/2</p>
-            <button class="next" onclick="openForm2()">Далее</button>
-            <button class="close" onclick="closeForm()">&times;</button>
-            <input class="name" type="text"  placeholder="Имя" >
-            <input class="lastname" type="text" placeholder="Фамилия">
-            <input class="tel" type="tel" placeholder="Телефон +380">
-        
-        </div>
-        
-        
-        <div class="popup2" id='popupform2' >
-            
-            <button class="back" onclick="closeForm2()"> &lt; </button>
-            <p class="nazad" >Назад</p>
-            <p id="two">2/2</p>
-            <h1>Бронирование места</h1>
-            <h3 class="data">Выбирите подходящую дату </h3>
-            <h3 class="otd">Количество отдыхающих</h3>
-            <input type="date" class="kalendar">    
-        
-        
-        <p id="old">Взрослых</p>
-            
-            <form class="dateInput1">
-            <button type="button" onclick="input_val('dec','dateInput-day')">-</button>
-            <input type="input" id="dateInput-day" placeholder="0"> 
-            <button type="button" onclick="input_val('inc','dateInput-day')">+</button>  
-          </form>
-        
-            <p id="young">Детей до 7 лет</p>
-            
-            <form class="dateInput2">
-                <button type="button" onclick="input_val('dec','dateInput-month')"  >-</button>
-                <input type="input" id="dateInput-month" placeholder="0"
-                >
-                <button type="button" onclick="input_val('inc','dateInput-month')">+</button>
-              </form>
-            
-            <h3>Выбирите тип оплаты </h3>
-          
-            <div class="radio">
-                <input type="radio" checked class="check1" name="pay">
-                <label1 for=".check1">Предоплата в размере 50% от стоимости, картой</label><br>
-                <input type="radio" class="check2"  name="pay"> 
-                <label2 for=".check2">В центральном офисе “Море Туров” в Днепре</label>
-                
-            </div>
-            <button class="next" onclick="openForm3()">Забронировать</button>
-         
-        </div>
-        
-        
-        <div class="popup3" id="popupform3">
-            <img src="image 21.png" alt="image 21.png" >
-            <button class="close" onclick="closeForm3()">&times;</button>
-            
-            <h1>Бронь успешно выполнена</h1>
-            <p class="gradulation">В течении 10 минут, с  Вами свяжется Наш специалист для розьяснения деталей.</p>
-            <p class="last-child">Приятного отдыха!</p>
-        
-        </div>
-    </div>
-    
-    
-    <div class="blok1">
-        <div class="heder">
-            <div id="top" class="logo">
-                <img src="Logo.svg" alt="logo" width="165px" height="26px">
-            </div>
-            <div class="menu">
-                <div class="itemmenu1">
-                    <a href="#NP">Наши преимущества</a>
-                </div>
-                <div class="itemmenu2">
-                    <a href="#program">Программа</a></div>
-                <div class="itemmenu3">
-                    <a href="#feedback">Отзывы</a></div>
-                <div class="itemmenu4">
-                    <a href="#photo">Галерея</a></div>
-                <div class="itemmenu5">
-                    <a href="#kontakts">Контакты</a></div>
-                <div class="itemmenu6">+380 9863-777-68</div>
-            </div>
-        </div>
-        <div class="medium">
-            <p>Тур выходного дня</p>
-            <P class="big">Украинские Мальдивы</P>
-            <p>и загадочная Херсонщина </p>
-        </div>
-            <div class="buttons item">
-            
-            
-                <div class="blok" id="bg"> 
-                    <p id='itembuttons' >Ближайшие даты</p>
-                    <P id='textbutton0'>27.08-29.08</P>
-                    <p id='textbutton1'>Отправка с города <b>Днепр</b></p>
-                    <a class="lol1"href="#" >Посмотреть еще даты</a><img class="arrow" src="arrow.png" alt="arrow">
-                </div>
-                   
-                
-                <div class="blok" id="bg">
-                    <P id='itembuttons'>Стоимость тура</P>
-                    <p id='textbutton0'>3 500 грн</p>
-                    <P id='textbutton1'>Группа <b>15</b> человек</P>
-                    <a class="lol1"href="#" >Узнать о скидках</a><img class="arrow" src="arrow.png" alt="arrow"> 
-                </div> 
-                
-    
-                <div class="blok" id="bg1">
-                    <a class="lol" href="#" onclick="openForm()"><b>Забронировать</b></a>
-                </div>
-            
-            
-            </div>  
-
-    </div>
-     
-
-    
-
-    <div class="blok2">
-        <img class="img" src="sec.png" alt="sec">
-        <div class="item2 title2">
-            <p id="NP">Наши преимущества  <img class='numbers1' src="01.png" alt="01"> </p>
-        </div>
-    
-        <div class="item2 boxs">
-            <div class="box item2">
-                <img src="icons/building.png" alt="building">
-                <h3>
-                    Более 130 офисов продаж
-                </h3>
-                <p>
-                    Наша сеть турагентств «Море Туров» насчитывает более 130 офисов продаж по Украине              и за границей. Мы позаботимся        о Вашем отдыхе, а все вопросы     по оформлению виз, страхования возьмём на себя.  У нас работает команда профессионалов!
-                </p>
-            </div>
-            
-            <div class="box item2">
-                <img src="icons/travel.png" alt="travel">
-                <h3>
-                    Более 100 млн туров      
-                </h3>
-                <p>
-                    В нашей базе более 100 млн туров по всему земному шару.  Мы работаем с проверенными     и надёжными туроператорами.  Наши менеджеры  сети турагентств «Море туров»  дружелюбны и помогут Вам подобрать отдых Вашей мечты!
-                </p>
-            </div>
-            <div class="box item2">
-                <img src="icons/fans.png" alt="fans">
-                <h3>Лучшая клубная программа</h3>
-                <p>
-                    В сети туристических агентств "Море туров" действует программа лояльности к постоянным клиентам с выдачей клубных карт, которые дают               их владельцам скидки, бонусы, уникальные возможности              и привилегии.
-                </p>
-
-            </div>
-            <div class="box item2">
-                <img src="icons/financial.png" alt="building">
-                <h3>
-                    Возможность купить тур в рассрочку 
-                </h3>
-                <p> Мы предоставим Вам возможность купить тур               в беспроцентную рассрочку       до 3 месяцев в офисах продаж сети турагентств «Море туров»! 
-                </p>
-            </div>
-            
-            
-            <div class="box item2">
-                <img src="icons/customer-service.png" alt="building">
-                <h3>Работаем 7 дней в неделю</h3>
-                <p>Наши специалисты работают   7 дней в неделю, с утра               до позднего вечера, чтобы ваши мечты стали реальностью. 
-                </p>
-
-            </div>
-            
-            <div class="box item2">
-            </div>
-        
-        </div>
-        
-        
-      
-    </div>
-
-    <div class="blok3">
-       
-        <div class="item3 title3">
-            <p id="program">Программа на 3 дня <img class='numbers2' src="02.png" alt="02"></p>
-        </div>
-    
-        <div class="item3">
-                <div class="itemblok1">
-                     <div class="boxik"><img src="/image 35.png" alt="image 35.png"></div>   
-                     <div class="boxik">
-                         <h1>День 1 </h1>
-                         <h3>27.08</h3>
-                         <ul>
-                            <li>- Поселение в отель. Завтрак</li>
-                            <li>- Переезд на катере из Скадовска на остров Джарылгач; экологическая тропа к старому маяку; купание в Черном море; отдых на песчаном пляже</li>
-                            <li>- Обед</li>
-                            <li>- Прогулка на мыс "Стрелка Маяка" - это незабываемые пейзажи морской глади </li>
-                            <li>- Ужин</li>
-                        </ul>
-                     </div>   
-                </div>
-                <div class="itemblok2"><div class="boxik"><img src="dzharylgach-zakat 2.png" alt="image 35.png"></div>   
-                <div class="boxik">
-                    <h1>День 2 </h1>
-                    <h3>28.08</h3>
-                    <ul>
-                        <li>- Завтрак </li>
-                        <li>- Загораем, купаемся, плюс променад вдоль лучших песочных пляжей Украины</li>
-                        <li>- Обед</li>
-                        <li>- Мастер-классы по каякингу</li>
-                        <li>- Для желающих - феерические путешествия в дальние уголки острова. Фантастически красивые озёра и удивительные закаты ждут Вас </li>
-                        <li>- Посиделки у костра, и загадывание желаний под куполом из миллиона ярких звезд</li>
-                       
-
-                    </ul>
-                </div>   </div>
-                <div class="itemblok3"><div class="boxik"><img src="1 3.png" alt="image 35.png"></div>   
-                <div class="boxik">
-                    <h1>День 3 </h1>
-                    <h3>29.08</h3>
-                    <ul>
-                        <li>- Завтрак </li>
-                        <li>- Выезд на самый крупный необитаемый остров в Центральной Европе и в Украине </li>
-                        <li>- Обед</li>
-                        <li>- Сафари с гидом по национальному парку «Джарылгачский».</li>
-                        <li>- Прогулки в дальние уголки острова</li>
-                        <li>- Экскурсия на ваш выбор: Аскания Нова, Алешковская пустыня или Розовое озеро.</li>
-                        <li>- Ужин. Отправление домой</li>
-                    </ul>
-                </div>   
-            </div>
-        
-        </div>
-
-        <div class="item3 box2">
-
-            <div class="box2_1 one">
-                
-
-                <div class="boxit t">
-                   <p>В программу тура <color>входит</color>:</p>     
-                </div>
-                <div class="boxit ">
-                    <ul>
-                        <li>- экскурсионное обслуживание по всему маршруту</li>
-                        <li>- проезды в комфортабельном автобусе</li>
-                        <li>- проживание 2 ночи в гостинице</li>
-                        <li>- комплексное питание во второй и третий дни</li>
-                        <li>- страхование на время путешествия</li>
-                    </ul>
-                </div>
-            </div>
-            
-
-            <div class="box2_1 two"> 
-                <div class="boxit t">
-                    <p>В программу тура <color>не входит</color>:</p> 
-                </div>
-                <div class="boxit ">
-                    <ul>
-                    <li>- водные прогулки</li>
-                    <li>- пляжные зонты и лежаки</li>
-                    <li>- питание в кафе</li>
-                    <li>- плата за вход в национальные парки и заповедники  
-                    </ui>
-                </div>
-            </div>
-    
-            <div class="box2_1 boder1">sss</div>
-            <div class="box2_1 boder2">ssss</div>
-
-
-        </div>
-        
-        
-      
-    </div>
-    
-    <div class="blok4">
-        <div class="item4 title3">
-            <p>Вам подойдет этот тур, если <img class='number3' src="03.png" alt="03"> </p>
-         
-            
-        </div>
-        
-        <div class="item4 box3">
-            <div class="txtboxone box3_1">
-                <ul>
-                    <li>Вы устали от серых будней и ищите разнообразия</li>
-                    <li>недостаточно свободного времени для отдыха</li>
-                    <li>цены за туры и поездки за границу Вас пугают</li>
-                    <li>Ваш ребенок не переносит длительных поездок</li>
-                    <li>хотите устроить отпуск всей семье</li>
-                    <li>хотите увидеть Украину под новым ракурсом</li>
-                    <li>получить бурю впечатлений, сочных фотографий, и по-настоящему расслабиться!</li>
-                </ul>
-
-
-            </div>
-            <div class="box3_1">
-                <img class="img1box3" src="image2.png" alt="image2" height="299px" width="452px">
-                <div class="figurs1"></div>
-                <div class="figurs2"></div>
-            </div>
-            <div class="box3_1">
-                <img class="img1box3" src="image3.png" alt="image2" height="299px" width="452px">
-                <div class="figurs1"></div>
-                <div class="figurs2"></div>
-            </div>
-            <div class="txtboxtwo box3_1">
-                <div class="box">
-                    <p>Наше турагенство предоставляет <color>скидку</color> на все туры и поездки для детей  до 7 лет в размере <color>20%</color> от стоимости тура </p>
-                </div>
-            
-                
-                <img class='volna' src="volna.png" alt="volna">
-                
-            </div>
-        </div>
-    
-    
-    </div>
-
-    <div class="white">
-        <div class="whiteblok1 ">
-            <p id="one">Ближайшие даты </p>
-            <p id="two" >27.08-29.08</p>
-            <p id="three">Отправка с города Днепр</p> 
-        </div>
-        <div class="whiteblok2 ">
-            <p id="one">Стоимость тура</p>
-            <p id="two">3 500 грн</p>
-            <p id="three">Группа 15 человек</p>
-        </div>
-
-        <div class="figura1">1</div>
-        <div class="figura2">2</div>
-
-
-
-    </div>
-
-    <div class="blok5">
-        <div class="item5">
-            <img src="ambrella.png" alt="ambrella">
-            <p class="txt">Хочешь в тур ?</p>
-            <p class="txt2">Забронируй место для себя и близких, не выходя из дома, в пару кликов</p>
-            <button  onclick="openForm()">Забронировать</button>
-            
-        </div>
-    </div>
-
-    <div class="blok6">
-        <div class="item6 title3">
-            <p>Твоим гидом и другом на 3 дня станет <img class='numbers4' src="04.png" alt="04"></p>
-        </div>
-         
-        <div class="item6 box4">    
-            <div class="item6">
-                <h2>Артем Авдеев</h2> 
-                <p>Я помогу тебе взглянуть на Украину с другого ракурса! - это мой девиз Всегда хотел путешествовать, но как и все студенты - не имел ни гроша.</p>
-                <p>С 16 лет началось мое путешествие по Украине,.“Это не дорого и не далеко” - говорил я тогда я себе.</p>
-                <p>Я и подумать не мог, сколько удивительных мест находиться в Нашей стране. За пару лет, посетил каждый город Украины, увидел много прекрасных и исторических мест.  </p>
-                <p>Теперь, со своим 12-ти летнем стажем “путешественника”, с удовольствием покажу и расскажу Вам о них!</p>
-            </div>
-            <img class="man" src="man.png" alt="man">
-            
-            
-        </div>
-    </div>
-
-    <div class="blok7">
-        <div class="item7 title3">
-            <p id="feedback"> Отзывы о последних турах <img class='numbers5' src="05.png" alt="05"></p>
-        </div> 
-        
-        <div class="item7 box5">
-            <div class="cd-testimonials-wrapper cd-container">
-                <!-- cd-testimonials -->
-            
-            
-                <div class="flex-viewport" style="overflow: hidden; position: relative; height: 0px;">
-                  <ul class="cd-testimonials" style="width: 1200%; transition-duration: 0s; transform: translate3d(-2004px, 0px, 0px);">
-                    <li class="clone" aria-hidden="true" style="width: 668px; float: left; display: block; opacity: 1; position: relative;">
-                        <div class="cd-author">
-                            <figure>
-                                <img src="feedback.png" alt="Author image" >
-                                <figcaption>Антонина Высоцкая</figcaption>	
-                            </figure>
-                        <p>Очередной раз наша семья приобрела тур через Вашу компанию.            Хочу выразить огромную благодарность за организацию всех моих восхитительных отпусков турфирме “Море Туров”, уже несколько               лет подряд я приобретаю туры и остаюсь полна впечатлений                            и положительных эмоций.  Обязательно обращусь ещё!</p>
-                      </div> <!-- cd-author -->
-                    </li>
-                    <li class="clone" aria-hidden="true" style="width: 668px; float: left; display: block; opacity: 1; position: relative;">
-                        <div class="cd-author">
-                            <figure>
-                                <img src="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/img/avatar-11.jpg" alt="Author image" >
-                                <figcaption>Галина Киричек</figcaption>	
-                            </figure>
-                        <p>Очередной раз наша семья приобрела тур через Вашу компанию.            Хочу выразить огромную благодарность за организацию всех моих восхитительных отпусков турфирме “Море Туров”, уже несколько               лет подряд я приобретаю туры и остаюсь полна впечатлений                            и положительных эмоций.  Обязательно обращусь ещё!</p>
-                      </div> <!-- cd-author -->
-                    </li>
-                    <li class="clone" aria-hidden="true" style="width: 668px; float: left; display: block; opacity: 1; position: relative;">
-                        <div class="cd-author">
-                            <figure>
-                                <img src="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/img/avatar-7.jpg" alt="Author image" >
-                                <figcaption>Анастасия Медведьева</figcaption>	
-                            </figure>
-                        <p>Очередной раз наша семья приобрела тур через Вашу компанию.            Хочу выразить огромную благодарность за организацию всех моих восхитительных отпусков турфирме “Море Туров”, уже несколько               лет подряд я приобретаю туры и остаюсь полна впечатлений                            и положительных эмоций.  Обязательно обращусь ещё!</p>
-                      </div> <!-- cd-author -->
-                    </li>
-
-
-                
-                  </ul>
-                </div>
-                <ul class="flex-direction-nav">
-                  <li><a class="flex-prev" href="#">Previous</a></li>
-                  <li><a class="flex-next" href="#">Next</a></li>
-                </ul>
-              </div> <!-- cd-testimonials-wrapper -->
-            
-              </div> <!-- cd-testimonials-all -->
-            
-  </div>
-
-       
-
-        </div> 
-
-    </div>
-
-    <div class="blok8">
-        <div class="item8 title3">
-            <p id="photo">Фото с последней поездки <img class='numbers' src="06.png" alt="06"></p>
-        </div>
-        <div class="item8">
-            
-            <!-- Swiper -->
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"   ><img src="slide1.png" width="309px" height="235px" alt=""></div>
-      <div class="swiper-slide"  ><img src="slide2.png" width="309px" height="235px" alt="">    </div>
-      <div class="swiper-slide"  ><img src="slide3.png" width="309px" height="235px" alt=""> </div>
-      <div class="swiper-slide"  ><img src="slide4.png" width="309px" height="235px" alt=""></div>
-      <div class="swiper-slide"  ><img src="slide5.png" width="309px" height="235px" alt=""> </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-
-        </div>
-        <div class="item8">
-            <p id="txt8_1">Остались вопросы? </p>
-            <p id="txt8_2">Интересует другая дата?</p>
-            <p id="txt8_3">Закажи обратный звонок, и Наш специалист детально Вам все расскажет</p>
-        </div>
-        <div class="item8 bloks8">
-            <div class="bloks8_1" > 
-                <input type = "text"  placeholder="Введите Ваше имя"  >
-            </div>
-            <div class="bloks8_1">
-                <input type="number" placeholder="Номер Вашего телефона" >
-             </div>
-            <div class="bloks8_1">
-                <button>Заказать обратный звонок</button>
-            </div>
-        </div>
-        <div class="item8 ">
-            <p id="kontakts" class="contaktstxt">Контакты </p>
-        </div>
-        <div class="item8 bloks9">
-            <div class="bloks9_1"> 
-                <p>Центральный офис в Днепре</p>
-                <p>проспект Гагарина, 8</p>
-            </div>
-            <div class="bloks9_1">
-                <p> +380 9863-777-68</p>
-                <p>nadada3248@ukr.net</p> 
-             </div>
-            <div class="bloks9_1 links">
-                <div class="bloks9link fc">
-                    <a href="error.html"> <img src="icons/facebook.png" alt="FB"></a>
-                </div>
-                <div class="bloks9link is">
-                    <a href="error.html"><img src="icons/instagram.png" alt="INST"></a>
-                </div>
-                <div class="bloks9link vb">
-                    <a href="error.html"><img src="icons/viber.png" alt="VB"></a>
-                </div>
-                <div class="bloks9link tg">
-                    <a href="error.html"><img src="icons/telegram 1.png" alt="TG"></a>
-                </div>
-                <div class="bloks9link tg">
-                    <a href="#top"> <img src="/back.png"></a>
-                </div>
-            </div>
-            
-
-
-        </div>
-        <div class="item8 downnav">
-            <div class="d_n">
-                <img class="img" src="logo1.png" alt="logo1">
-            </div>
-            <div class="d_n">
-                <a href="#NP">Наши преимущества</a>
-            </div>
-            <div class="d_n">
-                <a href="#program">Программа</a>
-            </div>
-            <div class="d_n">
-                <a href="#feedback">Отзывы</a>
-            </div>
-            <div class="d_n">
-                <a href="#photo">Галерея</a>
-            </div>
-            <div class="d_n">
-                <a href="#kontakts">Контакты</a>
-            </div>
-            
-        </div>
-    </div>
-
-    
-
-
-
-
-    <!-- ПРОГРАМУВАННЯ КНОПОК В POPUP--> 
-    <script>  
-        function openForm() {
-      document.getElementById("popupform").style.display = "block";
-    }
-    
-    function closeForm() {
-      document.getElementById("popupform").style.display = "none";
-    }
-    
-    function openForm2() {
-      document.getElementById("popupform2").style.display = "block";
-    }
-    
-    function closeForm2() {
-      document.getElementById("popupform2").style.display = "none";
-    }
-    
-    function openForm3() {
-      document.getElementById("popupform3").style.display = "block";
-    }
-    
-    function closeForm3() {
-      document.getElementById("popupform3",).style.display = "none",
-      document.getElementById("popupform2",).style.display = "none",
-      document.getElementById("popupform",).style.display = "none";
-    }
-    </script>
-    
-    
-    <!-- ПРОГРАМУВАННЯ КНОПОК CЧОТЧИКА В POPUP--> 
-    
-     <script> 
-         function input_val( dir, elid ) {
-        console.log(dir + " " + elid)
-        var inputEl = document.getElementById(elid)
-      console.log(inputEl)
-        var value = parseInt(inputEl.value, 10)
-      if (isNaN(value))
-          value = 0
-          
-        if (dir == "dec")
-            value--
-      else if (dir == "inc")
-            value++
-        
-      inputEl.value = value
-    }
-     </script>
-
-
-    <script src="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/js/jquery-2.1.1.js"></script>
-    <script src="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/js/masonry.pkgd.min.js"></script>
-    <script src="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/js/jquery.flexslider-min.js"></script>
-    <script src="https://s-sd.ru/files/slider-reviews-customer-site-to-css3/js/main.js"></script> <!-- Resource jQuery -->
-  
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          
-          slidesPerView: 3,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          autoplay: {
-          delay: 1700,
-        },
-      
-        });
-      </script>
-
-
+   
 
 
 
