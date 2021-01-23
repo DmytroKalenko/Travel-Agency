@@ -7,10 +7,18 @@
      font-family: "Montserrat-Regular"; 
      src: url("/fonts/Montserrat-Regular.ttf");
   }
+*{
+    box-sizing: border-box;
+}
 
 body{
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    color: #8e8f91;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: 1fr;
+    column-gap: 50px;
 }
 
 .header{
@@ -35,4 +43,160 @@ body{
     height: 100%;
     width: 100%;
     color: white;
+}
+
+.main{
+    grid-column: 3/11;
+}
+
+.main .ofers {
+    display: grid;
+    grid-template-rows: 134px 72px 80px 1fr;
+}
+
+.main .ofers ul{
+    display: inline-flex;  
+}
+
+/*--------ofer list-- start- */
+.main .ofers .slots{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.main .ofers .slots .item{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.main .ofers .slots img{
+    height: 50%;
+    width: 100%;
+    border-radius: 2px;
+    padding: 8px 3px 0px 3px;
+}
+
+.main .ofers .slots h1{
+    font-size: 30px;
+    padding: 29px 0px 5px 0px;
+    color: rgb(97, 93, 93);
+}
+
+.main .ofers .slots input{
+    height: 37px;
+    width: 166px;
+    margin: 30px 0px 60px 0px;
+    border-radius: 18px;
+    color: #8e8f91;
+    border: none;
+    font-family: "Montserrat-Bold";
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+.main .ofers .slots input:hover{
+    background-color: #ffc74a ;
+    color: #b98000;
+}
+
+.main .ofers .slots .poznan{
+    grid-column: 1/5; 
+}
+.main .ofers .slots .warsaw{
+    grid-column: 5/9
+}
+.main .ofers .slots .wroclaw{
+    grid-column: 9/13
+}
+
+.main .ofers .slots .karpacz{
+    grid-column: 1/5
+}
+.main .ofers .slots .dolina{
+    grid-column: 5/9
+}
+.main .ofers .slots .kozy{
+    grid-column: 9/13
+}
+/*--------ofer list-- end----- */
+
+
+/*--------info about city---start---*/
+.main .about_city{
+    display: grid;
+    grid-template-rows: 160px 1fr;
+}
+
+.main .about_city .city_name{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: "Montserrat-Bold"; 
+    font-size: 30px;
+}
+
+.main .about_city .info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main .about_city .info h2{
+    font-family: "Montserrat-Bold"; 
+    font-size: 36px;
+    color: #f8c759;
+}
+.main .about_city .info .blok1{
+    padding-left: 8px;
+}
+
+.main .about_city .info .blok1 p{
+    padding: 70px 67px 70px 0px;
+    line-height: 3;
+}
+
+.main .about_city .info .blok1 input{
+    height: 37px;
+    width: 166px;
+    margin: 30px 0px 60px 0px;
+    border: none;
+    border-radius: 18px;
+    color: #8e8f91;
+    font-family: "Montserrat-Bold"; ;
+}
+
+.main .about_city .info .blok1 input:hover{
+    background-color: #ffc74a ;
+    color: #b98000;
+}
+.main .about_city .info .draw{
+    position: relative;
+}
+
+.main .about_city .info .draw img{
+    height: 83% ;
+    width: 100%;
+}
+
+.main .about_city .info .draw .yellowblok{
+    position: absolute;
+    z-index: -1;
+    left: 45px;
+    top: 38px;
+    height: 690px;
+    width: 850px;
+    border: 15px solid orange;
+}
+/*--------info about city---end----*/
+
+
+.section{
+    grid-column: 1/13;
+}
+
+.section img{
+    width: 100%;
+   
 }
