@@ -324,10 +324,28 @@ body{
 
 .section{
     grid-column: 1/13;
+    position: relative;
 }
 
 .section img{
-    position: relative;
+    width: 100%;  
+}
+
+.section .blok{
+    height: 100%;
     width: 100%;
-   
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+}
+
+.section .blok .txtblok{
+    grid-row: 2/3;
+}
+
+.section .blok .txtblok h2{
+    font-size: 92pt;
 }
