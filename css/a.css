@@ -106,14 +106,23 @@ body{
 .header .title{
     grid-column: span 3;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .header .title p{
     font-size: 19pt;
-    padding-bottom: 45px;
+    padding-top: 90px;
 }
+
+.mainslider{
+    grid-column: span 12;
+    position: relative;
+    top: 0;
+    
+
+}
+
 
 .main{
     grid-column: 3/11;
@@ -382,3 +391,98 @@ body{
     color: #8e8f91;
     margin-bottom: 160px;
 }
+
+
+.slider{
+    grid-column: span 12;
+    position: relative;
+    padding: 0px 60px;
+    margin-top: -9%;
+}
+
+.slider img{
+    position: relative;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.slider h1{
+  
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat-Bold";
+    font-size: 48pt;
+    text-shadow: rgb(0, 0, 0) 0 0 2px;
+}
+
+
+.slider .infoblok{
+ 
+
+}
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+/* Слайд */
+.slick-slide{
+    position: relative;
+    display: flex;
+ 
+    flex-direction: column-reverse;
+    border: 2px solid black;
+    
+    
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{ 
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+   left: 0;
+   background-image: url("/img/prewev.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 40px;
+   height: 40px;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right:0;
+    background-image: url("/img/next.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
