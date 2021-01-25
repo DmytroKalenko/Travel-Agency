@@ -178,7 +178,7 @@ body{
     padding-left: 10px;
 }
 
-.main .ofers .menu ul li input{
+.main .ofers .menu ul li input,{
     height: 52px;
     margin: 30px 0px 60px 0px;
     border-radius: 41px;
@@ -291,17 +291,18 @@ body{
     line-height: 2;
 }
 
-.main .about_city .info .blok1 input{
+.main .about_city .info .blok1 input,.slider input{
     height: 37px;
     width: 166px;
     margin: 30px 0px 60px 0px;
     border: none;
     border-radius: 18px;
     color: #8e8f91;
-    font-family: "Montserrat-Bold"; ;
+    font-family: "Montserrat-Bold"; 
+    font-size: 10pt;
 }
 
-.main .about_city .info .blok1 input:hover{
+.main .about_city .info .blok1 input:hover,.slider input:hover{
     background-color: #ffc74a ;
     color: #b98000;
 }
@@ -407,17 +408,41 @@ body{
 }
 
 .slider h1{
-  
+    padding-top: 50%;
     color: rgb(255, 255, 255);
     font-family: "Montserrat-Bold";
-    font-size: 48pt;
+    font-size: 38pt;
     text-shadow: rgb(0, 0, 0) 0 0 2px;
 }
 
+.slider p{
+    padding: 15px 0px 95px 0px;
+    color: white;
+}
 
-.slider .infoblok{
- 
+.slider input{
+    margin: 0px;
+}
 
+/* Слайд */
+.slick-slide{
+    position: relative;
+
+    
+    
+}
+
+.slider .txtblokslider{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.541);
+    overflow:hidden ;  
+    word-break: break-all;
 }
 /* Слайдер */
 .slick-slider{}
@@ -434,21 +459,21 @@ body{
     display: flex;
 }
 
-/* Слайд */
-.slick-slide{
-    position: relative;
-    display: flex;
- 
-    flex-direction: column-reverse;
-    border: 2px solid black;
-    
-    
-}
+
 /* Слайд активный (показывается) */
-.slick-slide.slick-active{}
+.slick-slide.slick-active{
+
+}
 /* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
+.slick-slide.slick-current .txtblokslider{
+    background-color: rgba(243, 243, 243, 0)}
+
+.slick-slide .txtblokslider:hover{
+    background-color: rgba(243, 243, 243, 0)    
+    }
+
+
+    /* Слайд по центру */
 .slick-slide.slick-center{}
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
