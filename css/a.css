@@ -74,7 +74,6 @@ body{
    
 }
 
-
 .header .center{
     grid-column: 2/3;
 }
@@ -115,7 +114,6 @@ body{
     font-size: 19pt;
     padding-bottom: 45px;
 }
-
 
 .main{
     grid-column: 3/11;
@@ -186,8 +184,6 @@ body{
     color: #ffffff;
 }
 
-
-
 /*--------ofer list-- start- */
 .main .ofers .slots{
     display: grid;
@@ -253,7 +249,6 @@ body{
 }
 /*--------ofer list-- end----- */
 
-
 /*--------info about city---start---*/
 .main .about_city{
     display: grid;
@@ -315,12 +310,11 @@ body{
     z-index: -1;
     left: 45px;
     top: 38px;
-    height: 690px;
-    width: 780px;
+    height: 85%;
+    width: 100%;
     border: 15px solid orange;
 }
 /*--------info about city---end----*/
-
 
 .section{
     grid-column: 1/13;
