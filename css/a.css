@@ -284,7 +284,7 @@ body{
 
 .main .about_city .info .blok1 p{
     padding: 70px 67px 70px 0px;
-    line-height: 3;
+    line-height: 2;
 }
 
 .main .about_city .info .blok1 input{
@@ -316,7 +316,7 @@ body{
     left: 45px;
     top: 38px;
     height: 690px;
-    width: 850px;
+    width: 780px;
     border: 15px solid orange;
 }
 /*--------info about city---end----*/
@@ -347,5 +347,44 @@ body{
 }
 
 .section .blok .txtblok h2{
+    font-family: "Montserrat-Bold"; 
     font-size: 92pt;
+    color: white;
+}
+
+.section .blok .txtblok input{
+    height: 50px;
+    width: 150px;
+    margin: 50px 0px ;
+    border: none;
+    border-radius: 48px;
+    background-color: #ffc74a ;
+    color: #b98000;
+    font-family: "Montserrat-Bold"; 
+}
+
+.section .blok .txtblok p{
+    font-size: 19pt;
+}
+.section .blok .txtblok p a{
+    color: #ffc74a;;
+}
+
+.footer{
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img{
+    padding: 166px 0px 30px 0px ;
+}
+
+.footer p{
+    font-family: "Montserrat-Bold";
+    font-size: 24pt;
+    color: #8e8f91;
+    margin-bottom: 160px;
 }
