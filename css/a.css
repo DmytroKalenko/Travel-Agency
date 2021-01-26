@@ -196,11 +196,13 @@ body{
 
 /*--------ofer list-- start- */
 .main .ofers .slots{
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr); 
     column-gap: 30px;
     row-gap: 30px;
+    overflow: scroll;
 }
 
 .main .ofers .slots .item{
@@ -399,7 +401,7 @@ body{
     grid-column: span 12;
     position: relative;
     padding: 0px 60px;
-    margin-top: -9%;
+    margin-top: -8%;
 }
 
 .slider img{
@@ -433,10 +435,16 @@ body{
     font-size: 10pt;
 }
 
+.slider input:hover{
+    background-color: #ffc74a ;
+    color: #b98000;
+}
+
 /* Слайд */
 .slick-slide{
     position: relative;
     margin: 0px 6px;
+    transition: all 0.3s ease 0s;
 }
 
 
@@ -489,8 +497,7 @@ body{
     background-color: rgba(243, 243, 243, 0)    
     }
 
-
-    /* Слайд по центру */
+/* Слайд по центру */
 .slick-slide.slick-center{}
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
@@ -500,6 +507,13 @@ body{
     top: 50%;
     z-index: 10;
     font-size: 0px;
+    background-color: rgba(226, 226, 238, 0.986);
+    border-radius: 50%;
+    border: none;
+}
+
+.slick-arrow:hover{
+    background-color: rgba(0, 0, 0, 0.555);
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev{
@@ -509,6 +523,8 @@ body{
    background-repeat: no-repeat;
    width: 40px;
    height: 40px;
+   margin-left: 10px ;
+  
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
@@ -518,12 +534,14 @@ body{
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
+    margin-right: 10px ;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
 .slick-dots{}
-.slick-dots li{}
+.slick-dots li{
+}
 /* Активная точка */
 .slick-dots li.slick-active{}
 /* Элемент точки */
