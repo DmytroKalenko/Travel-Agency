@@ -1,10 +1,12 @@
 
 $(document).ready(function(){
     $(".slider").slick({
-        slidesToShow:6,   
+        slidesToShow:7,   
      speed:1500,
      autoplay: true,
      autoplaySpeed: 1000,  
-     centerMode: true, 
+     centerMode: true,
+     focusOnSelect: true, 
+     
     });
 });

@@ -71,8 +71,9 @@ body{
 }
 .header nav ul li a{
     color: white;
-   
 }
+
+
 
 .header .center{
     grid-column: span 3;
@@ -178,7 +179,7 @@ body{
     padding-left: 10px;
 }
 
-.main .ofers .menu ul li input,{
+.main .ofers .menu ul li input{
     height: 52px;
     margin: 30px 0px 60px 0px;
     border-radius: 41px;
@@ -291,7 +292,7 @@ body{
     line-height: 2;
 }
 
-.main .about_city .info .blok1 input,.slider input{
+.main .about_city .info .blok1 input{
     height: 37px;
     width: 166px;
     margin: 30px 0px 60px 0px;
@@ -302,7 +303,7 @@ body{
     font-size: 10pt;
 }
 
-.main .about_city .info .blok1 input:hover,.slider input:hover{
+.main .about_city .info .blok1 input:hover{
     background-color: #ffc74a ;
     color: #b98000;
 }
@@ -404,6 +405,7 @@ body{
 .slider img{
     position: relative;
     height: 100%;
+    width: 100%;
     border-radius: 7px;
 }
 
@@ -411,7 +413,7 @@ body{
     padding-top: 50%;
     color: rgb(255, 255, 255);
     font-family: "Montserrat-Bold";
-    font-size: 38pt;
+    font-size: 30pt;
     text-shadow: rgb(0, 0, 0) 0 0 2px;
 }
 
@@ -421,16 +423,22 @@ body{
 }
 
 .slider input{
-    margin: 0px;
+    display: block;
+    margin: 0px; 
+    height: 37px;
+    width: 166px;
+    border: none;
+    border-radius: 18px;
+    font-family: "Montserrat-Bold"; 
+    font-size: 10pt;
 }
 
 /* Слайд */
 .slick-slide{
     position: relative;
-
-    
-    
+    margin: 0px 6px;
 }
+
 
 .slider .txtblokslider{
     position: absolute;
@@ -441,9 +449,13 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 7px;
     overflow:hidden ;  
     word-break: break-all;
 }
+
+
+
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
@@ -468,6 +480,11 @@ body{
 .slick-slide.slick-current .txtblokslider{
     background-color: rgba(243, 243, 243, 0)}
 
+
+.slick-slide.slick-current .txtblokslider input{
+    display: block;
+    background-color: #ffc74a ;
+    color: #b98000;  }
 .slick-slide .txtblokslider:hover{
     background-color: rgba(243, 243, 243, 0)    
     }
