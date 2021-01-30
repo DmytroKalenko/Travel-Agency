@@ -1,11 +1,7 @@
-@font-face {
-    font-family: "Montserrat-Bold"; 
-    src: url("/fonts/Montserrat-Bold.ttf");
- }
- 
+
  @font-face {
-     font-family: "Montserrat-Regular"; 
-     src: url("/fonts/Montserrat-Regular.ttf");
+     font-family: "Valera"; 
+     src: url("/fonts/VarelaRound-Regular.ttf");
   }
 *{
     box-sizing: border-box;
@@ -13,10 +9,11 @@
 
 :root{       
     --orange:  #ffffff;
-    --hovercollor: #00ade2;
+    --hovercollor: #fc1d00e8;
+    --border_radius: 5px
 }
 body{
-    font-family: "Montserrat-Regular";
+    font-family: "Valera";
     font-size: 14pt;
     color: #8e8f91;
     display: grid;
@@ -25,16 +22,34 @@ body{
     column-gap: 50px;
 }
 
+
+
+body::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+
+
+
 .header{
     grid-column: span 12;
     position: relative;
     top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;  
 }
 
-.header img{
-    height: 100vh;
-    width: 100%;
-}
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover}
+
 
 .header .black_blok{
     grid-template-columns: repeat(3, 1fr);
@@ -50,73 +65,71 @@ body{
     text-align: center;
 }
 
-
+.header .black_blok .logo{
+    padding: 50px 0px 0px 0px;
+}
 
 .header .black_blok .logo img{
-    width: auto;
-    height: auto;
-    display: inline;
+    width: 60px;
+    height: 80px;
+    display: inline-block;
 }
 
 .header .black_blok .logo p{
-    font-family: "Montserrat-Bold"; 
-    font-size: 30pt;
-    display: inline-flex;
-    padding: 60px 0px 0px 7px;
+    padding-left: 10px; 
+    font-size: 35pt;
+    display: block;
 }
 
 .header nav{
     grid-column: 3/4;
 }
+.header nav ul{
+    margin: 120px 80px 0px 0px;
+}
 .header nav ul li{
     display: inline-block;
     font-size: 18pt;  
-    padding: 60px 0px 0px 45px 
+    padding: 0px 0px 0px 45px 
 }
 .header nav ul li a{
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24pt;
 }
 
+.header nav ul li a:hover{
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ff0000;
+    text-transform: capitalize;
+    transition:all .33s linear;
+    color: var(--hovercollor);
+}
 
 
 .header .center{
     grid-column: span 3;
 }
 .header .center h2{
-    font-size: 92pt;
-    font-family: "Montserrat-Bold";
-    padding-bottom: 30px;
+    font-size: 100pt;
+    padding-bottom: 60px;
 }
 .header .center h2 span{
     color: var(--hovercollor);
 }
 
 .header .center p{
-    font-size: 19pt;
-    color: #8e8f91;
+    font-size: 21pt;
+    color: #ffffffad;
     padding-bottom: 50px;
 }
 
-.header .center input{
-    height: 52px;
-    width: 232px;
-    margin: 30px 0px 60px 0px;
-    border: 1px solid #ccc;
-    font-family: "Montserrat-Bold";
-    background-color: var(--orange) ;
-    color: #777;
-}
 
-.header .center input:hover{
-    color: white;
-    border: 1px solid var(--hovercollor);
-    background: var(--hovercollor);
-}
 
 .header .title{
     grid-column: span 3;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -125,13 +138,7 @@ body{
     padding-top: 90px;
 }
 
-.mainslider{
-    grid-column: span 12;
-    position: relative;
-    top: 0;
-    
 
-}
 
 
 .main{
@@ -147,7 +154,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat-Bold"; 
+     
     font-size: 30pt;
     color: rgba(0, 0, 0, 0.788);
 }
@@ -191,10 +198,11 @@ body{
 .main .ofers .menu ul li input{
     height: 52px;
     margin: 30px 0px 60px 0px;
-    border-radius: 41px;
-    border: none;
-    font-family: "Montserrat-Bold";
-    background-color: #bdc8d9c9 ;
+    border-radius: var(--border_radius);
+    
+    padding: 0px 14px;
+    border: 1px solid #ccc;
+    background-color: #ffffffc9 ;
     color: #8e8f91;
 }
 
@@ -227,19 +235,26 @@ body{
 
 .main .ofers .slots::-webkit-scrollbar-thumb{
     background-color: var(--hovercollor);
+    border-radius: 60px;
 }
 
 
 
 .main .ofers .slots .item{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
     background-color: rgb(255, 255, 255);
-    text-align: center;
+    
 }
 
 .main .ofers .slots img{
-    border-radius: 2px;
+    border-radius: 8px;
     padding: 8px 3px 0px 3px;
+    height: auto;
+    width: 100%;
 }
 
 .main .ofers .slots h1{
@@ -252,10 +267,10 @@ body{
     height: 37px;
     width: 166px;
     margin: 30px 0px 60px 0px;
-    border-radius: 18px;
+    border-radius: var(--border_radius);
     color: #8e8f91;
     border: none;
-    font-family: "Montserrat-Bold";
+    
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
 }
@@ -269,11 +284,14 @@ body{
 /*--------ofer list-- end----- */
 
 /*--------info about city---start---*/
+.main .about_city{
+    margin-bottom: 100px;
+}
 .main .about_city .city_name{
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-family: "Montserrat-Bold"; 
+     
     font-size: 30px;
 }
 .main .about_city .city_name h1{
@@ -286,7 +304,7 @@ body{
 }
 
 .main .about_city .info h2{
-    font-family: "Montserrat-Bold"; 
+     
     font-size: 36pt;
     color: var(--hovercollor);
 }
@@ -306,7 +324,7 @@ body{
     border: none;
     order: 1px solid #ccc;
     color: #777;
-    font-family: "Montserrat-Regular"; 
+    font-family: "Valera"; 
     font-size: 10pt;
 }
 
@@ -321,7 +339,7 @@ body{
 }
 
 .main .about_city .info .draw img{
-    height: 83% ;
+    height: 100% ;
     width: 100%;
 }
 
@@ -330,7 +348,7 @@ body{
     z-index: -1;
     left: 45px;
     top: 38px;
-    height: 85%;
+    height: 100%;
     width: 100%;
     border: 15px solid var(--hovercollor);
 }
@@ -361,7 +379,7 @@ body{
 }
 
 .section .blok .txtblok h2{
-    font-family: "Montserrat-Bold"; 
+     
     font-size: 92pt;
     color: white;
 }
@@ -373,7 +391,7 @@ body{
     border: none;
     border-radius: 3px;
     background-color: var(--orange) ;
-    font-family: "Montserrat-Bold"; 
+     
 }
 
 
@@ -407,7 +425,7 @@ body{
 }
 
 .footer p{
-    font-family: "Montserrat-Bold";
+    
     font-size: 24pt;
     color: #8e8f91;
     margin-bottom: 160px;
@@ -418,7 +436,8 @@ body{
     grid-column: span 12;
     position: relative;
     padding: 0px 60px;
-    margin-top: -8%;
+    margin-top: 60px;
+    
 }
 
 .slider img{
@@ -431,14 +450,16 @@ body{
 .slider h1{
     padding-top: 50%;
     color: rgb(255, 255, 255);
-    font-family: "Montserrat-Bold";
+    
     font-size: 30pt;
     text-shadow: rgb(0, 0, 0) 0 0 2px;
 }
 
 .slider p{
+    font-size: 21px;
     padding: 15px 0px 95px 0px;
     color: white;
+    text-shadow: rgb(0, 0, 0) 0 0 2px;
 }
 
 .slider input{
@@ -447,8 +468,8 @@ body{
     height: 37px;
     width: 166px;
     border: none;
-    border-radius: 18px;
-    font-family: "Montserrat-Bold"; 
+    border-radius: var(--border_radius);
+     
     font-size: 10pt;
 }
 
@@ -507,6 +528,9 @@ body{
 .slick-slide.slick-current .txtblokslider{
     background-color: rgba(243, 243, 243, 0)}
 
+    .slick-slide.slick-current .txtblokslider h1{
+        color: red;
+    }
 
 .slick-slide.slick-current .txtblokslider input{
     display: block;
@@ -579,15 +603,16 @@ body{
 /*--POP up--*/
 
 .pop a {
-  display: inline-block;
+  display: flex;
   margin: 30px 20px;
-  padding: 12px 15px;
   border: 1px solid #ccc;
   color: #777;
   text-decoration: none;
   height: 50px;
-  text-align: center;
-  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: var(--border_radius);
 }
 .pop a:hover {
   color: white;
@@ -746,3 +771,22 @@ body{
   .slider2 .slick-dots li.slick-active{}
   /* Элемент точки */
   .slider2 .slick-dots li button{}
+
+
+
+
+  @media (max-width:688px){
+  .header .center h2 span{
+    color: rgb(255, 196, 0);
+}}
+  @media (min-width: 689px) and (max-width: 992px){
+    .header .center h2 span{
+        color: rgb(30, 255, 0);
+    }
+  }
+  @media (min-width: 993px) and (max-width: 1312px){
+    .header .center h2 span{
+        color: rgb(255, 0, 0);
+    }
+  }
+ 
