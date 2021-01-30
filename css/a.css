@@ -613,7 +613,7 @@ video{
 /* Стрелка влево */
 .slick-arrow.slick-prev{
    left: 0;
-   background-image: url("/img/prewev.png");
+   background-image: url("./img/prewev.png");
    background-size: 100%;
    background-repeat: no-repeat;
    width: 40px;
@@ -624,7 +624,7 @@ video{
 /* Стрелка вправо */
 .slick-arrow.slick-next{
     right:0;
-    background-image: url("/img/next.png");
+    background-image: url("./img/next.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 40px;
