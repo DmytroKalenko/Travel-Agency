@@ -178,8 +178,9 @@ video{
 }
 
 .main .ofers .search button{
-   background-image: url("/img/Search.png");
+   background-image: url("./img/Search.png");
    background-size: contain;
+   background-repeat: no-repeat;
    height: 32px;
    width: 32px;
    border: none;
@@ -291,17 +292,63 @@ video{
     display: flex;
     justify-content: center;
     align-items: center; 
-     
     font-size: 30px;
 }
+
+
 .main .about_city .city_name h1{
     margin: 50px 0 70px 0;
 }
 
-.main .about_city .info{
+.main .about_city .info .slider3 .item{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    position: relative;
 }
+
+
+
+
+/* Стрелка влево */
+.main .about_city .info .slider3 .slick-arrow.slick-prev{
+ }
+ /* Стрелка вправо */
+ .main .about_city .info .slider3 .slick-arrow.slick-next{
+ }
+
+ .slick-dots{
+     display: flex;
+     flex-direction: row;
+     column-gap: 15px;
+    
+     
+ }
+.slick-dots li{
+    list-style: none;
+    position: relative;
+    
+   
+   
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+   background-color: var(--hovercollor);
+
+}
+/* Элемент точки */
+.slick-dots li button{
+    position: absolute;
+    top: 0;
+    height: 10px;
+    width: 10px ;
+    font-size: 0;
+    border: none;
+    padding: 0px;
+    border-radius: 50%;
+   
+}
+
+
 
 .main .about_city .info h2{
      
@@ -312,8 +359,8 @@ video{
     padding-left: 8px;
 }
 
-.main .about_city .info .blok1 p{
-    padding: 70px 67px 70px 0px;
+.main .about_city .info .slider3 .blok1 p{
+    padding: 70px;
     line-height: 2;
 }
 
@@ -339,8 +386,8 @@ video{
 }
 
 .main .about_city .info .draw img{
-    height: 100% ;
-    width: 100%;
+    height: 90% ;
+    width: 90%;
 }
 
 .main .about_city .info .draw .yellowblok{
@@ -348,8 +395,8 @@ video{
     z-index: -1;
     left: 45px;
     top: 38px;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     border: 15px solid var(--hovercollor);
 }
 /*--------info about city---end----*/
@@ -505,7 +552,9 @@ video{
 
 
 /* Слайдер */
-.slick-slider{}
+.slick-slider{
+    position: relative;
+}
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
 /* Слайдер с точками */
