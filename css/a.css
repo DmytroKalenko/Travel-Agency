@@ -351,7 +351,7 @@ video{
 
 
 .main .about_city .info h2{
-     
+     text-align: center;
     font-size: 36pt;
     color: var(--hovercollor);
 }
@@ -389,7 +389,10 @@ video{
     height: 90% ;
     width: 90%;
 }
-
+.main .about_city .info .draw iframe{
+    height: 90% ;
+    width: 90%;
+}
 .main .about_city .info .draw .yellowblok{
     position: absolute;
     z-index: -1;
@@ -407,8 +410,10 @@ video{
 }
 
 .section img{
-    width: 100%;  
+    width: 100%;
+    filter: brightness(40%);  
 }
+
 
 .section .blok{
     height: 100%;
