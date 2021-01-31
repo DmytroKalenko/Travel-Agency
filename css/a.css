@@ -848,7 +848,7 @@ video{
   }
   @media (min-width: 993px) and (max-width: 1312px){
     .header .center h2 span{
-        color: rgb(255, 0, 0);
+        color: rgb(55, 0, 255);
     }
   }
  
