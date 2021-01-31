@@ -304,6 +304,7 @@ video{
 }
 
 .main .about_city .info .slider3 .item{
+ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     position: relative;
@@ -786,7 +787,7 @@ video{
 
 
 .slider2 .slick-slider{
-    
+   
     height: 450px;
   }
 
@@ -852,3 +853,35 @@ video{
     }
   }
  
+  @media (min-width: 1312px) and (max-width: 2200px){
+    .header .center h2 span{
+        color: rgb(255, 0, 212);
+    }
+
+    .main .about_city .info .slider3 .item{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns:none;
+    }
+
+    .main .about_city .info  .slider3 .blok1{
+        grid-row: 2/3;
+    }
+
+    .main .about_city .info .slider3 .draw iframe{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main .about_city .info .slider3 .blok1{
+        box-sizing: border-box;
+        padding-top: 20px ;
+    }
+
+    .slider3 .slick-dots {
+        justify-content: center;}
+   
+   .slider3 .slick-arrow{
+      top:75%
+        }
+
+  }
