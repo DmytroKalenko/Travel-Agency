@@ -884,4 +884,14 @@ video{
       top:75%
         }
 
+    .header nav {
+            grid-column: 2/4;
+            padding-left: 35%;
+        }
+    
+    .header nav ul {
+            margin: 120px 0px 0px 0px;
+        }
+
+
   }
