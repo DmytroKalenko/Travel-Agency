@@ -225,7 +225,7 @@ video{
 }
 
 .main .ofers .slots::-webkit-scrollbar{
-    width: 10px;
+    width: 7px;
     height: 0px;
 }
 
@@ -693,14 +693,17 @@ video{
 }
 /* стили модального окна */
 .popup {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 250px;
+  
+  justify-content: center;
+ 
   top: -100%;
   right: 0;
   left: 50%;
   z-index: 20;
   margin: 0;
-  width: 27%;
+  width: 54%;
   /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
   padding: 15px;
@@ -733,7 +736,7 @@ video{
 .popup input {
     margin: 30px 0 !important;
     border-radius: 3px !important;
-    margin-left: 40% !important;
+   
     
 }
 
@@ -753,7 +756,7 @@ video{
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  top: 12%;
+  top: 7%;
 }
 /* формируем кнопку закрытия */
 .close {
@@ -772,6 +775,12 @@ video{
     background-image: url("/img/close_icon_hover.png");
 }
 
+.popup .button {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /* Слайдер */
 .slider2{
@@ -782,17 +791,21 @@ video{
 .slider2 img{
     padding: 0 !important;
     height: 100%;
-    width: 100%;
+   
+    border-radius: 0px !important;
 }
 
 
 .slider2 .slick-slider{
    
-    height: 450px;
   }
 
   .slider2 .slider_item{
-      height: 450px;
+     
+ 
+    height: 250px;
+      display: flex;
+    justify-content: center;
   }
 
 
@@ -803,6 +816,7 @@ video{
   /* Ограничивающая оболочка */
   .slider2 .slick-list {
       overflow: hidden;
+        height: 100%;
   }
   /* Лента слайдов */
   .slider2 .slick-track{
@@ -828,7 +842,7 @@ video{
   /* Стрелка не активная */
   .slider2 .slick-arrow.slick-disabled{}
   /* Точки (булиты) */
-  .slider2 .slick-dots{}
+ 
   .slider2 .slick-dots li{}
   /* Активная точка */
   .slider2 .slick-dots li.slick-active{}
@@ -893,5 +907,7 @@ video{
             margin: 120px 0px 0px 0px;
         }
 
-
+    .popup {
+        width: 50%;
+    }    
   }
