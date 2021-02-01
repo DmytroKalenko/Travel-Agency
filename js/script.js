@@ -30,12 +30,14 @@ $(document).ready(function(){
           breakpoint: 1023,
           settings: {
             slidesToShow: 5,
+            
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 3,
+            
           
           }
         },
@@ -43,7 +45,8 @@ $(document).ready(function(){
           breakpoint: 200,
           settings: {
             slidesToShow: 1,
-         
+            arrows:false,
+            dots:true,
           }
         }
         // You can unslick at a given breakpoint now by adding:
