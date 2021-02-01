@@ -858,6 +858,148 @@ video{
   @media (max-width:688px){
   .header .center h2 span{
     color: rgb(255, 196, 0);
+
+    .main {
+        grid-column: 2/12;
+    }
+
+    .header .black_blok .logo{
+        padding: 20px 0 0 0;
+    }
+
+    .header .black_blok .logo img{
+        height: 50px;
+        width: 40px;
+    }
+    .header .black_blok .logo p{
+        font-size: 20pt;
+    }
+
+    .header nav {
+        grid-column: 2/4;
+    }
+
+    .header nav ul {
+        margin: 72px 0px 0px 70px; 
+    }
+
+    .header nav ul li{
+        padding: 0px 0px 0px 25px;   
+    }
+
+    .header nav ul li a{
+        font-size: 17pt; 
+    }
+
+    .header .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .center h2{
+        font-size: 70pt;
+        padding-bottom: 27px;
+    }
+
+    .header .center p{
+        font-size: 14pt;
+    }
+
+    .header .title {
+        align-items: flex-end;}
+
+
+    .header .title p{
+        font-size: 12pt;
+        padding-bottom: 40px;
+    }
+
+
+    .slider input{
+        width: 100%;
+    }
+    .slider h1{
+        font-size: 16pt;
+    }
+    .slider p{
+        font-size: 10pt;
+        padding: 25px 0;
+    }
+
+    .main .ofers .txt h2{
+        margin: 35px 0;
+        font-size: 25pt;
+    }
+
+    .main .ofers .menu ul li input{
+        height: 35px;
+        margin: 30px 0;
+    }
+
+    .main .ofers .slots{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .main .ofers .slots h1{
+        font-size: 21pt;
+        padding: 15px 0 10px 0;
+    }
+
+    .main .ofers .slots p{
+        font-size: 12pt;
+       
+    }
+
+    .main .about_city .info .slider3 .item{
+        grid-template-rows: 372px 1fr;
+        grid-template-columns:none;
+    }
+
+    .main .about_city .info  .slider3 .blok1{
+        grid-row: 2/3;
+    }
+
+    .section .blok .txtblok h2{
+        font-size: 40pt;
+    }
+    .section .blok .txtblok input{
+        margin: 13px 0;
+        height: 25px;
+        width: 120px;
+    }
+
+    .section .blok .txtblok p{
+        font-size: 11pt;
+    }
+    .footer img {
+        height: 80px;
+        width: 35px;
+        padding: 20px 0px;
+    }
+    .footer p {
+        font-size: 10pt;
+        margin-bottom: 15px;
+    }
+    .pop a{
+        margin: 9px 0;
+        width: 270px;
+    }
+
+    .popup {
+        width: 90%;
+    } 
+
+    .main .ofers .slots .popup {
+        font-size: 12pt;
+    }
+
+    .main .ofers .slots .popup h1{
+        font-size: 20pt;
+    }
+
+
 }}
   @media (min-width: 689px) and (max-width: 992px){
     .header .center h2 span{
