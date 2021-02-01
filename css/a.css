@@ -1,7 +1,7 @@
 
  @font-face {
      font-family: "Valera"; 
-     src: url("/fonts/VarelaRound-Regular.ttf");
+     src: url("../fonts/VarelaRound-Regular.ttf");
   }
 *{
     box-sizing: border-box;
@@ -405,6 +405,9 @@ video{
     height: 90%;
     width: 90%;
     border: 15px solid var(--hovercollor);
+    background-image: url("../img/Loading.svg");
+    background-repeat: no-repeat;
+    background-position: center center
 }
 /*--------info about city---end----*/
 
@@ -620,7 +623,7 @@ video{
 /* Стрелка влево */
 .slick-arrow.slick-prev{
    left: 0;
-   background-image: url("/img/prewev.png");
+   background-image: url("../img/prewev.png");
    background-size: 100%;
    background-repeat: no-repeat;
    width: 40px;
@@ -631,7 +634,7 @@ video{
 /* Стрелка вправо */
 .slick-arrow.slick-next{
     right:0;
-    background-image: url("/img/next.png");
+    background-image: url("../img/next.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 40px;
@@ -766,13 +769,13 @@ video{
   width: 40px;
   position: absolute;
   background-color:none;
-  background-image: url("/img/close_icon.png");
+  background-image: url("../img/close_icon.png");
   background-size: cover;
   border-radius: 50%;
 
 }
 .close:hover {
-    background-image: url("/img/close_icon_hover.png");
+    background-image: url("../img/close_icon_hover.png");
 }
 
 .popup .button {
