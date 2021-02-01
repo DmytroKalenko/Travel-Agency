@@ -857,9 +857,12 @@ video{
 
   @media (max-width:688px){
   .header .center h2 span{
-    color: rgb(255, 196, 0);
+    color: rgb(255, 196, 0);}
 
-    .main {
+    body{
+        column-gap: 0px;
+    }
+    main {
         grid-column: 2/12;
     }
 
@@ -899,12 +902,12 @@ video{
     }
 
     .header .center h2{
-        font-size: 70pt;
+        font-size: 30pt;
         padding-bottom: 27px;
     }
 
     .header .center p{
-        font-size: 14pt;
+        font-size: 10pt;
     }
 
     .header .title {
@@ -931,6 +934,10 @@ video{
     .main .ofers .txt h2{
         margin: 35px 0;
         font-size: 25pt;
+    }
+
+    .main .ofers .menu{
+        flex-wrap: wrap; 
     }
 
     .main .ofers .menu ul li input{
@@ -991,6 +998,10 @@ video{
         width: 90%;
     } 
 
+    .main{
+        grid-column: 1/13;
+    }
+
     .main .ofers .slots .popup {
         font-size: 12pt;
     }
@@ -999,11 +1010,14 @@ video{
         font-size: 20pt;
     }
 
+    .main .about_city .info .slider3 .blok1 p {
+        padding: 10px; 
+        line-height: 1;
+}
 
-}}
   @media (min-width: 689px) and (max-width: 992px){
     .header .center h2 span{
-        color: rgb(30, 255, 0);
+        color: rgb(0, 225, 255);
     }
 
     .main {
@@ -1148,6 +1162,9 @@ video{
 
 
   }
+
+
+
   @media (min-width: 993px) and (max-width: 1312px){
     .main {
         grid-column: 2/12;
