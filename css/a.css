@@ -933,7 +933,11 @@ video{
 
     .main .ofers .txt h2{
         margin: 35px 0;
-        font-size: 25pt;
+        font-size: 18pt;
+    }
+
+    .main .ofers .search input{
+        width: auto;
     }
 
     .main .ofers .menu{
@@ -964,6 +968,15 @@ video{
         grid-template-columns:none;
     }
 
+    .main .about_city .info .draw .yellowblok{
+        display: none;
+    }
+
+    .main .about_city .info .draw iframe{
+        height: 100%;
+        width: 100%;
+    }
+    
     .main .about_city .info  .slider3 .blok1{
         grid-row: 2/3;
     }
@@ -1014,6 +1027,11 @@ video{
         padding: 10px; 
         line-height: 1;
 }
+
+.slick-arrow{
+    display: none;
+}
+
 
   @media (min-width: 689px) and (max-width: 992px){
     .header .center h2 span{
