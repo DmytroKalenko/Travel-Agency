@@ -37,7 +37,8 @@ body{
 
 .mypop-up{
     display: grid;
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 1fr 1fr;
     border: 2px solid red;
     background-color: rgb(137, 235, 8);
     height: 80%;
