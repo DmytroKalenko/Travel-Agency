@@ -22,6 +22,30 @@ body{
     column-gap: 50px;
 }
 
+.background-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    background-color: rgba(13, 58, 48, 0.562);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    margin:0px auto  ;
+    z-index: 3;
+}
+
+.mypop-up{
+    display: grid;
+    
+    border: 2px solid red;
+    background-color: rgb(137, 235, 8);
+    height: 80%;
+    width: 90%;
+
+}
+
+
 
 
 body::-webkit-scrollbar{
