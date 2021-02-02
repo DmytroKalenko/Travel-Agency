@@ -47,6 +47,12 @@ $(document).ready(function(){
             slidesToShow: 1,
             arrows:false,
             dots:true,
+            speed:1000,
+     autoplay: false,
+     autoplaySpeed: 1000,  
+     centerMode: true,
+    
+     waitForAnimate: false,
           }
         }
         // You can unslick at a given breakpoint now by adding:
