@@ -935,7 +935,10 @@ video{
         font-size: 10pt;
         padding: 25px 0;
     }
-
+    
+    .slider .txtblokslider{
+        justify-content: space-between;
+    }
     .slick-dots {
         justify-content: center;
         padding-top: 13px;
@@ -948,8 +951,12 @@ video{
 
     .main .ofers .search input{
         width: auto;
+        font-size: 14pt;
     }
-
+    .main .ofers .search button{
+        height: 15px;
+        width: 15px;
+    }
     .main .ofers .menu{
         flex-wrap: wrap; 
     }
@@ -973,6 +980,19 @@ video{
        
     }
 
+    .main .about_city{
+        margin-bottom: 30px;
+    }
+    .main .about_city .info .slider3 .blok1 p {
+        font-size: 12pt;
+        padding: 10px; 
+        line-height: 1.3;
+        text-align: justify;}
+
+    .main .about_city .city_name h1{
+        margin: 30px 0;
+    }
+
     .main .about_city .info .slider3 .item{
         grid-template-rows: 372px 1fr;
         grid-template-columns:none;
@@ -994,7 +1014,7 @@ video{
     }
 
     .section{
-        height: 160px;
+        height: 180px;
     }
     .section img{
         height: 100%;
@@ -1006,6 +1026,7 @@ video{
         margin: 13px 0;
         height: 25px;
         width: 120px;
+        font-size: 10pt;
     }
 
     .section .blok .txtblok p{
@@ -1041,13 +1062,7 @@ video{
         font-size: 20pt;
     }
 
-    .main .about_city{
-        margin-bottom: 30px;
-    }
-    .main .about_city .info .slider3 .blok1 p {
-        padding: 10px; 
-        line-height: 1.3;
-        text-align: justify;
+
 }
 
 .slick-arrow{
