@@ -1184,7 +1184,7 @@ video{
 
     .main .ofers .slots .popup {
         font-size: 12pt;
-        grid-template-rows: 250px 80px 1fr 90px 90px;
+        grid-template-rows: 200px 80px 1fr 90px 90px;
         overflow: scroll;
         height: 86%;
         
