@@ -1184,10 +1184,17 @@ video{
 
     .main .ofers .slots .popup {
         font-size: 12pt;
+        grid-template-rows: 250px 80px 1fr 90px 90px;
+        overflow: scroll;
+        height: 86%;
+        
+
     }
 
     .main .ofers .slots .popup h1{
         font-size: 20pt;
+        padding-top: 30px;
+
     }
 
     .slider3 .slick-arrow{
