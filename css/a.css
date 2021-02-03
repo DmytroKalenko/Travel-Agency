@@ -33,6 +33,7 @@ body{
     width: 100%;
     margin:0px auto  ;
     z-index: 3;
+   
 }
 
 .mypop-up{
@@ -40,7 +41,7 @@ body{
     grid-template-rows: 100px 1fr;
 
     background-color: rgb(255, 255, 255);
-    height: 55%;
+    height: 75%;
     width: 53%;
     position: relative;
     
@@ -87,6 +88,14 @@ body{
     padding: 8px 20px 0px 0px;
     line-height: 1.2;
 }
+
+#closemypop-up{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 
 body::-webkit-scrollbar{
     width: 0px;
@@ -174,19 +183,32 @@ video{
     font-size: 18pt;  
     padding: 0px 0px 0px 45px 
 }
+.header nav button{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24pt;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
 .header nav ul li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 24pt;
 }
 
-.header nav ul li a:hover{
+.header nav button:hover ,.header nav ul li a:hover{
     padding-bottom: 8px;
     border-bottom: 2px solid #ff0000;
     text-transform: capitalize;
     transition:all .33s linear;
     color: var(--hovercollor);
 }
+
+.header nav ul li .teamsbutton:focus{
+    color: hotpink;
+}
+
 
 
 .header .center{
