@@ -23,7 +23,7 @@ body{
 }
 
 .background-popup{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border: 2px solid red;
