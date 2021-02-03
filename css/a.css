@@ -36,20 +36,72 @@ body{
    
 }
 
+
+
 .mypop-up{
+    position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
 
     background-color: rgb(255, 255, 255);
-  
-    width: 53%;
+    
+    width: 50%;
     
     
 }
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+}
 
+.item{
+    position: relative;
+    
+  
+}
 
+.item hr{
+    height: 1px;
+    border: none;
+    background-color: rgba(155, 148, 148, 0.808);
+}
 
-.teams{}
+.item img{
+    height: auto;
+    width: 50%;
+    float: left;
+    margin: 0px 10px;
+}
+
+.item h1{
+    color: black;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.item h1 span{
+    font-style: italic;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+.item p{
+    padding: 2px 10px;
+    font-size: 14pt;
+    line-height: 1.3;
+   
+}
+
+.teams{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
   
 
 
@@ -922,99 +974,7 @@ video{
   .slider2 .slick-dots li button{}
 
 
-/* скрываем чекбокс */
-#menu__toggle {
-    opacity: 0;
-  }
-  /* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
-    position: fixed;
-    top: 15px;
-    right: 28px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 3;
-  }
-  /* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: var(--hovercollor);
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
 
-/* контейнер меню */
-.menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    z-index: 2;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    right: 0;
-  }
-
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    transition-duration: .25s;
-  }
-  .menu__box {
-    transition-duration: .25s;
-  }
-  .menu__item {
-    transition-duration: .25s;
-  }
 
   @media (max-width:688px){
   .header .center h2 span{
@@ -1027,13 +987,38 @@ video{
         grid-column: 2/12;
     }
 
+    .mypop-up{
+        width: 95%;
+        height: 90%;
+        overflow: scroll;
+    }
+
+
+    .mypop-up .teams{
+        grid-template-columns: none;
+    }
+
+    .mypop-up .teams h1{
+        font-size: 16pt;
+    }
+
+    .mypop-up .teams h1 span{
+        font-size: 10pt;
+    }   
+
+    .mypop-up .teams .item p{
+        font-size: 10pt;
+    }
+
+    .mypop-up .teams .item img{
+        width: 44%;
+    }
+    
     .blokmenu{
         display: block;
     }
 
-    .hamburger-menu{
-        display: block;
-    }
+   
 
     .header .black_blok .logo{
         padding: 12px 0 0 0;
@@ -1048,9 +1033,7 @@ video{
         padding: 5px 0px 0px 0;
     }
 
-    .header nav {
-        display: none;
-    }
+ 
 
     .header nav ul {
         margin: 72px 0px 0px 70px; 
@@ -1271,6 +1254,32 @@ video{
         color: rgb(0, 225, 255);
     }
 
+    .mypop-up{
+        width: 90%;
+        height: 90%;
+        
+    }
+
+    .mypop-up .teams{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        overflow: scroll;
+    }
+
+    .mypop-up .teams h1{
+        font-size: 16pt;
+    }
+
+    .mypop-up .teams h1 span{
+        font-size: 12pt;
+        font-weight: normal;
+    }
+
+    .mypop-up .teams p{
+        font-size: 10pt;
+    }
+
     .main {
         grid-column: 2/12;
     }
@@ -1291,12 +1300,7 @@ video{
         font-size: 20pt;
     }
 
-    .hamburger-menu{
-        display: block;
-    }
-    .header nav {
-        display: none;
-    }
+
 
     .header nav ul {
         margin: 72px 0px 0px 70px; 
@@ -1427,6 +1431,11 @@ video{
     .main {
         grid-column: 2/12;
     }
+
+    .mypop-up{
+     width: 80%;   
+    }
+
     .header .black_blok .logo img{
         height: 60px;
         width: 45px;
