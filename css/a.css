@@ -37,17 +37,56 @@ body{
 
 .mypop-up{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 1fr 1fr;
-    border: 2px solid red;
-    background-color: rgb(137, 235, 8);
-    height: 80%;
-    width: 90%;
+    grid-template-rows: 100px 1fr;
 
+    background-color: rgb(255, 255, 255);
+    height: 55%;
+    width: 53%;
+    position: relative;
+    
 }
 
+.mypop-up .team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 25pt;
+}
 
+.teams{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 400px ) ;
+    column-gap: 50px;
+    margin: 0px 50px 0px 50px;
+    text-align: justify;
 
+}
+.teams img{
+    width: 40%;
+    height: 77%;
+    border-radius: 2%;
+    float: left;
+    margin-right: 20px;
+}
+
+.teams h1{
+    font-weight: bold;
+    color: black;
+    font-size: 22pt;
+}
+
+.teams h1 span{
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.teams p{
+    border-top: 1px solid #dcdcdc;
+    padding: 8px 20px 0px 0px;
+    line-height: 1.2;
+}
 
 body::-webkit-scrollbar{
     width: 0px;
@@ -79,9 +118,7 @@ body::-webkit-scrollbar{
     z-index: 1;
 }
 
-.hamburger-menu{
-    display: none;
-}
+
 
 video{
   position: absolute;
