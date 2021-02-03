@@ -41,53 +41,18 @@ body{
     grid-template-rows: 100px 1fr;
 
     background-color: rgb(255, 255, 255);
-    height: 75%;
+  
     width: 53%;
-    position: relative;
+    
     
 }
 
-.mypop-up .team{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    font-size: 25pt;
-}
 
-.teams{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(2, 400px ) ;
-    column-gap: 50px;
-    margin: 0px 50px 0px 50px;
-    text-align: justify;
 
-}
-.teams img{
-    width: 40%;
-    height: 77%;
-    border-radius: 2%;
-    float: left;
-    margin-right: 20px;
-}
+.teams{}
+  
 
-.teams h1{
-    font-weight: bold;
-    color: black;
-    font-size: 22pt;
-}
 
-.teams h1 span{
-    font-size: 12pt;
-    font-style: italic;
-}
-
-.teams p{
-    border-top: 1px solid #dcdcdc;
-    padding: 8px 20px 0px 0px;
-    line-height: 1.2;
-}
 
 #closemypop-up{
     position: absolute;
@@ -1458,7 +1423,7 @@ video{
 
 
 
-  @media (min-width: 993px) and (max-width: 1312px){
+  @media (min-width: 993px) and (max-width: 1440px){
     .main {
         grid-column: 2/12;
     }
@@ -1566,9 +1531,13 @@ video{
 
   }
  
-  @media (min-width: 1312px) and (max-width: 2200px){
+  @media (min-width: 1441px) and (max-width: 2200px){
     .header .center h2 span{
         color: rgb(255, 0, 212);
+    }
+
+    .teams{
+        row-gap: 50px;
     }
 
     .main .about_city .info .slider3 .item{
