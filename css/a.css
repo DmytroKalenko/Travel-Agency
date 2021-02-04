@@ -599,17 +599,97 @@ video{
     align-items: center;
 }
 
+.footer p{
+    font-size: 30px;
+}
+
+.footer p:first-child , .footer p:last-child{
+    margin: 30px 0px;
+}
+
+.footer #rights{
+    font-size: 12pt;
+}
+
 .footer img{
     padding: 166px 0px 30px 0px ;
 }
 
-.footer p{
-    
-    font-size: 24pt;
-    color: #8e8f91;
-    margin-bottom: 160px;
+.footer .blok{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;    
 }
 
+.footer .blok iframe{
+    height: 100%;
+    width: 100%;
+}
+
+ .footer .blok .icons{
+ 
+     display: grid;
+     grid-template-rows: repeat(4, 40px);
+     color: black;
+     row-gap: 20px;
+    
+ }
+ .footer .blok .icons ul li{
+     display: inline;
+     padding-left: 20px;
+ }
+
+ .footer .blok .icons h1{
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+     
+ }
+
+ .footer .blok .icons p{
+    font-size: 16pt;
+  
+ }
+
+ .footer .blok .icons .phone,.emial, .footer .blok .icons ul{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .footer .blok .icons .phone img, 
+ .footer .blok .icons .emial img{
+     height: 25px;
+     width: 25px;
+ }
+
+ .footer .blok .icons img{
+     margin: 0px;
+     padding: 0px;
+     height: 60px;
+     width: 60px;
+     
+ }
+
+ .footer .blok .icons a{
+     position: relative;
+     text-decoration: none;
+     color: black;
+    font-size: 20pt;       
+ }
+
+ .footer .blok .icons .emial a:hover::after, .footer .blok .icons .phone a:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20%; top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgb(255, 255, 230); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+   }
 
 .slider{
     grid-column: span 12;
@@ -1191,13 +1271,35 @@ video{
     .section .blok .txtblok p{
         font-size: 8pt;
     }
+    .footer .blok{
+        flex-wrap: wrap-reverse;
+        row-gap: 20px;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: none;
+    }
+    .footer .blok .icons{
+        row-gap: 5px;
+    }
+    .footer .blok .icons h1{
+        font-size: 25pt;
+    }
+
+    .footer .blok .icons p{
+        text-align: center;
+        font-size: 9pt;
+    }
+
+    .footer .blok .icons a{
+        font-size: 18pt;
+    }
+
     .footer img {
         height: 80px;
         width: 35px;
         padding: 20px 0px;
     }
     .footer p {
-        font-size: 10pt;
+        font-size: 13pt;
         margin-bottom: 15px;
     }
     .pop a{
@@ -1395,13 +1497,35 @@ video{
     .section .blok .txtblok p{
         font-size: 11pt;
     }
+
+    .footer .blok{
+        flex-wrap: wrap-reverse;
+        column-gap: 20px;
+    }
+
+    .footer .blok .icons{
+        grid-template-rows:repeat(4, 30px)
+    }
+
+    .footer .blok .icons p{
+        font-size: 11pt;
+    }
+
+    .footer .blok .icons h1{
+        font-size: 27pt;
+    }
+
+    .footer .blok .icons a{
+        font-size: 18pt;
+    }
+
     .footer img {
         height: 80px;
         width: 35px;
         padding: 20px 0px;
     }
     .footer p {
-        font-size: 10pt;
+        font-size: 13pt;
         margin-bottom: 15px;
     }
     .pop a{
@@ -1519,10 +1643,14 @@ video{
     .footer img {
         padding: 50px 0px 30px 0px;
     }
+    .footer .blok .icons p{
+        font-size: 14pt;
+    }
+
     .footer p {
         font-size: 19pt;
         color: #8e8f91;
-        margin-bottom: 60px;
+    
     }
     .popup {
         width: 90%;
@@ -1586,4 +1714,11 @@ video{
     .popup {
         width: 50%;
     }    
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
   }
