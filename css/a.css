@@ -22,6 +22,13 @@ body{
     column-gap: 50px;
 }
 
+body.lock{
+    overflow: hidden;
+}
+body.lock2{
+    overflow: hidden;
+}
+
 .background-popup{
     display: none;
     justify-content: center;
@@ -106,9 +113,17 @@ body{
 
 
 #closemypop-up{
+    padding: 0px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
+    border: none;
+    height: 26px;
+    width: 26px;
+    background-image: url("../img/icons/close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 
@@ -119,15 +134,7 @@ body::-webkit-scrollbar{
 }
 
 
-.blokmenu{
-    display: none;
-    height: 54px;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    z-index: 1;
-}
+
 
 .header{
     grid-column: span 12;
@@ -140,7 +147,7 @@ body::-webkit-scrollbar{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; 
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -828,7 +835,7 @@ video{
    width: 40px;
    height: 40px;
    margin-left: 10px ;
-   z-index: 2;
+   z-index: 1;
   
 }
 /* Стрелка вправо */
@@ -1053,9 +1060,145 @@ video{
   .slider2 .slick-dots li button{}
 
 
+.header2{
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+}
 
+.header2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header_body{
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.header_body a{
+   display: block;
+   height: 100%;
+   
+ top: 0;
+ left: 0;
+ z-index: 3;
+}
+
+.header_body img{
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    height: 100%;
+    width: auto;
+}
+
+.header__list li{
+    margin: 0px 0px 20px 0px;
+}
+
+.header__list{
+    display: block;
+}
+
+.header_link,.header__list button{
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+    text-decoration: none;
+    padding: 0px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+    .header__burger{
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        margin-right: 25px;
+
+    } 
+
+  
+
+    .header__burger::before,
+    .header__burger::after{
+       content: ''; 
+       background-color: rgb(0, 0, 0);
+       width: 100%;
+       height: 2px;
+       position: absolute;
+       left: 0px;
+       transition: all 0.3s ease 0s;
+    }
+
+  .header__burger::before{
+        top: 0;
+    }
+
+    .header__burger::after{
+        bottom: 0;
+    }
+
+    .header__burger span{
+        background-color: rgb(0, 0, 0);
+       width: 100%;
+       height: 2px;
+       position: absolute;
+       left: 0px;
+       top: 9px;
+       transition: all 0.3s ease 0s;
+    }
+
+    .header__burger.active span{
+        transform: scale(0);
+    }
+
+    .header__burger.active::before{
+        transform: rotate(45deg) ;
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg) ;
+        bottom: 9px;
+    }
+    .header_menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e6485a;
+        padding: 90px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .header_menu.active{
+       top:0 
+    }
 
   @media (max-width:688px){
+
+    .header2{
+        display: block;
+    }
+
   .header .center h2 span{
     color: rgb(251, 255, 0);}
 
@@ -1112,7 +1255,9 @@ video{
         padding: 5px 0px 0px 0;
     }
 
- 
+    .header nav {
+        display: none;
+    }
 
     .header nav ul {
         margin: 72px 0px 0px 70px; 
@@ -1210,6 +1355,11 @@ video{
         font-size: 12pt;
        
     }
+
+    .main .ofers .slots::-webkit-scrollbar{
+        display: none;
+    }
+
 
     .main .about_city{
         margin-bottom: 30px;
@@ -1351,6 +1501,9 @@ video{
 
 
   @media (min-width: 689px) and (max-width: 992px){
+    .header2{
+        display: block;
+    }
     .header .center h2 span{
         color: rgb(0, 225, 255);
     }
@@ -1401,7 +1554,9 @@ video{
         font-size: 20pt;
     }
 
-
+    .header nav {
+        display: none;
+    }
 
     .header nav ul {
         margin: 72px 0px 0px 70px; 
@@ -1464,6 +1619,9 @@ video{
 
     .main .ofers .slots{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .main .ofers .slots::-webkit-scrollbar{
+        display: none;
     }
 
     .main .ofers .slots h1{
@@ -1607,6 +1765,10 @@ video{
     .header .title p{
         font-size: 12pt;
         padding-bottom: 40px;
+    }
+
+    .header nav button{
+        font-size: 17pt;
     }
 
     .section .blok .txtblok h2 {
