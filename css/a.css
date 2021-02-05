@@ -383,7 +383,6 @@ video{
 }
 
 .main .ofers .slots img{
-    border-radius: 8px;
     padding: 8px 3px 0px 3px;
     height: 100%;
     width: 100%;
@@ -1218,7 +1217,7 @@ video{
         height: 90%;
         overflow: scroll;
         box-sizing: border-box;
-        
+
     }
 
 
@@ -1321,6 +1320,12 @@ video{
     .slider .txtblokslider{
         justify-content: space-between;
     }
+
+    .slider .txtblokslider a{
+        text-decoration: none;
+        width: 100%;
+    }
+
     .slick-dots {
         justify-content: center;
         padding-top: 13px;
@@ -1340,7 +1345,8 @@ video{
         width: 15px;
     }
     .main .ofers .menu{
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+        display: none; 
     }
 
     .main .ofers .menu ul li input{
@@ -1355,6 +1361,11 @@ video{
     .main .ofers .slots h1{
         font-size: 21pt;
         padding: 15px 0 10px 0;
+    }
+
+    #h1{
+        padding-top: 40px;
+
     }
 
     .main .ofers .slots p{
@@ -1468,6 +1479,15 @@ video{
         width: 90%;
     } 
 
+    .popup .price span{
+        font-size: 50px;
+        font-style: normal;
+    }
+
+    .popup input{
+        margin: 0px !important;
+    }
+
     .main{
         grid-column: 1/13;
     }
@@ -1483,7 +1503,7 @@ video{
 
     .main .ofers .slots .popup h1{
         font-size: 20pt;
-        padding-top: 30px;
+        
 
     }
 
@@ -1632,7 +1652,7 @@ video{
 
     .main .ofers .slots h1{
         font-size: 21pt;
-        padding: 15px 0 10px 0;
+        padding: 10px 0 10px 0;
     }
 
     .main .ofers .slots p{
