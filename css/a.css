@@ -389,7 +389,7 @@ video{
 }
 
 .main .ofers .slots h1{
-    font-size: 30pt;
+    font-size: 29pt;
     padding: 29px 0px 5px 0px;
     color: rgb(97, 93, 93);
 }
@@ -970,13 +970,13 @@ video{
 }
 /* формируем кнопку закрытия */
 .close {
-  top: 20px;
-  right: 24px;
-  height: 40PX;
-  width: 40px;
+  top: 15px;
+  right: 10px;
+  height: 26PX;
+  width: 26px;
   position: absolute;
   background-color:none;
-  background-image: url("../img/close_icon.png");
+  background-image: url("../img/icons/close.png");
   background-size: cover;
   border-radius: 50%;
 
@@ -1013,7 +1013,7 @@ video{
   .slider2 .slider_item{
      
  
-    height: 250px;
+    height: 100%;
       display: flex;
     justify-content: center;
   }
@@ -1031,6 +1031,7 @@ video{
   /* Лента слайдов */
   .slider2 .slick-track{
     display: flex;
+    height: 100%;
   }
   /* Слайд */
   .slider2 .slick-slide{}
@@ -1703,6 +1704,14 @@ video{
         font-size: 20pt;
     }
 
+    .slick-slider .slick-arrow{
+        height: 25px;
+        width: 25px;
+    }
+
+    .slider{
+        padding: 0px 40px; 
+    }
 
   }
 
