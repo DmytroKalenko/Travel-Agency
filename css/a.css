@@ -1045,6 +1045,8 @@ video{
   .slider2 .slick-slide.slick-cloned{}
   /* Стрелка */
   .slider2 .slick-arrow{
+      width: 33px;
+      height: 33px;
   }
   /* Стрелка влево */
   .slider2 .slick-arrow.slick-prev{}
