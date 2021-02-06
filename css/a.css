@@ -399,6 +399,7 @@ video{
     padding: 8px 3px 0px 3px;
     height: 100%;
     width: 100%;
+    margin: 0px;
 }
 
 .main .ofers .slots h1{
@@ -1380,8 +1381,8 @@ video{
     }
 
     .main .ofers .slots h1{
-        font-size: 21pt;
-        padding: 15px 0 10px 0;
+        font-size: 20pt;
+        padding: 10px 0 10px 0;
     }
 
     #h1{
@@ -1530,11 +1531,6 @@ video{
 
     }
 
-    .main .ofers .slots .popup h1{
-        font-size: 20pt;
-        
-
-    }
 
     .slider3 .slick-arrow{
         background-color: rgba(226, 226, 238, 0);
