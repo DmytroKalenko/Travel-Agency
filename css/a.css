@@ -30,8 +30,17 @@ body.lock2 ,body.lock3{
 }
 
 
+.up-botton{
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 1;
+}
 
-
+.up-botton img{
+    height: 40px;
+    width: 40px;
+}
 
 .background-popup{
     display: none;
