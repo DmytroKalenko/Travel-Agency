@@ -766,7 +766,9 @@ video{
     word-break: break-all;
 }
 
-
+.slider .txtblokslider a{
+    text-decoration: none;
+}
 
 /* Слайдер */
 .slick-slider{
