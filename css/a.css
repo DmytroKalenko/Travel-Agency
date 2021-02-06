@@ -25,9 +25,13 @@ body{
 body.lock{
     overflow: hidden;
 }
-body.lock2{
+body.lock2 ,body.lock3{
     overflow: hidden;
 }
+
+
+
+
 
 .background-popup{
     display: none;

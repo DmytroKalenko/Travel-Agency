@@ -16,3 +16,10 @@ $(document).ready(function(){
         $(".mypop-up").toggleClass('active');
         $('body').toggleClass('lock2');}); 
 });
+
+
+$(document).ready(function(){
+    $(".button-green").click(function(event) {
+        $(".popup").toggleClass('active');
+        $('body').toggleClass('lock3');}); 
+});
