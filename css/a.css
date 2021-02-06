@@ -33,14 +33,27 @@ body.lock2 ,body.lock3{
 .up-botton{
     position: fixed;
     top: 70px;
-    right: 20px;
+    right: 320px;
     z-index: 1;
-}
-
-.up-botton img{
+    background-image: url("../img/icons/up.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     height: 40px;
     width: 40px;
+    border-radius: 50%;
 }
+
+.up-botton:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+
+.up-botton a{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 
 .background-popup{
     display: none;
@@ -1544,12 +1557,14 @@ video{
         margin: 0;
         width: 23px;
     }
-}
 
-.slick-arrow{
-    display: none;
-}
+    .slick-arrow{
+     display: none;
+    }
 
+    .up-botton{
+        right: 20px;}
+  }
 
   @media (min-width: 689px) and (max-width: 992px){
     .header2{
@@ -1772,6 +1787,11 @@ video{
         padding: 0px 40px; 
     }
 
+    .up-botton{
+        right: 60px;}
+
+
+
   }
 
 
@@ -1894,6 +1914,8 @@ video{
         font-size: 20pt;
     }
 
+    .up-botton{
+        right: 60px;}
 
   }
  
@@ -1944,6 +1966,9 @@ video{
     .popup {
         width: 50%;
     }    
+
+
+
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {
