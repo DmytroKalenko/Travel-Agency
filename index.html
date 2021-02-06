@@ -630,7 +630,9 @@
                             <div class="slider_item">
                                 <picture>
                                     <source type="image/webp" srcset="./img/Wieliczka Salt Mine/7.webp 1x">
-                                    <img src="./img/Wieliczka Salt Mine/7.jpg" alt="">
+                                    <img class = "b-lazy" 
+                                     src="./img/png.png"   
+                                     data-src="./img/Wieliczka Salt Mine/7.jpg" alt="">
                                 </picture>    
                             </div>
                             <div class="slider_item">
@@ -941,5 +943,13 @@
     <script src="js/slider.js"></script>
     <script src="js/slider3.js" ></script>
     <script src="js/burger.js"></script>
+    <script src="js/blazy.js"></script>
+    <script>
+        ;(function() {
+            // Initialize
+            var bLazy = new Blazy();
+        })();
+    </script>
+
 </body>
 </html>
