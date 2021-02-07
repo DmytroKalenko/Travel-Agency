@@ -248,7 +248,10 @@ body.lock{
    background-image: url("../img/icons/close.png");
    background-repeat: no-repeat;
    background-size: cover;
-   
+}
+
+#closemypop-up:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 
@@ -1301,7 +1304,7 @@ video{
 
 }
 .close:hover {
-   background-image: url("../img/icons/close.png");
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .popup .button {
