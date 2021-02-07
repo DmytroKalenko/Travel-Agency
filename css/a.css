@@ -1603,9 +1603,6 @@ z-index: 3;
        display: block;
    }
 
- .header .center h2 span{
-   color: rgb(251, 255, 0);}
-
    body{
        -webkit-column-gap: 0px;
           -moz-column-gap: 0px;
@@ -1997,14 +1994,10 @@ z-index: 3;
    .header2{
        display: block;
    }
-   .header .center h2 span{
-       color: rgb(0, 225, 255);
-   }
-
+ 
    .mypop-up{
        width: 90%;
-       height: 90%;
-       
+       height: 90%;   
    }
 
    .mypop-up .teams{
@@ -2012,7 +2005,6 @@ z-index: 3;
        grid-template-columns: 1fr 1fr;
        -ms-grid-rows: 1fr 1fr;
        grid-template-rows: 1fr 1fr;
-       
        overflow: scroll;
    }
 
@@ -2117,12 +2109,10 @@ z-index: 3;
            -ms-flex-align: end;
                align-items: flex-end;}
 
-
    .header .title p{
        font-size: 12pt;
        padding-bottom: 40px;
    }
-
 
    .slider input{
        width: 100%;
@@ -2162,8 +2152,7 @@ z-index: 3;
    }
 
    .main .ofers .slots p{
-       font-size: 12pt;
-      
+       font-size: 12pt;  
    }
 
    .main .about_city .info .slider3 .item{
@@ -2272,18 +2261,15 @@ z-index: 3;
    }
 
    .up-botton{
-       right: 60px;}
+        right: 60px;}
 
    .youtube{
-           height: 100%;
-           width: 100%;
-       }
+        height: 100%;
+        width: 100%;
+    }
+}
 
- }
-
-
-
- @media (min-width: 993px) and (max-width: 1440px){
+@media (min-width: 993px) and (max-width: 1440px){
    .main {
        -ms-grid-column: 2;
        -ms-grid-column-span: 10;
@@ -2441,11 +2427,7 @@ z-index: 3;
 
 
 
- @media (min-width: 1441px) and (max-width: 2200px){
-   .header .center h2 span{
-       color: rgb(255, 0, 212);
-   }
-
+@media (min-width: 1441px) and (max-width: 2200px){
    .teams{
        row-gap: 50px;
    }
@@ -2512,12 +2494,10 @@ z-index: 3;
        height: 100%;
        width: 100%;
    }
+}
 
- }
-
- @media screen and (prefers-reduced-motion: no-preference) {
-   html,
-   body {
+@media screen and (prefers-reduced-motion: no-preference) {
+   html,body {
      scroll-behavior: smooth;
    }
- }
+}
