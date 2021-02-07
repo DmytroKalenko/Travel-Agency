@@ -1015,7 +1015,7 @@ video{
 
 }
 .close:hover {
-    background-image: url("../img/close_icon_hover.png");
+    background-image: url("../img/icons/close.png");
 }
 
 .popup .button {
