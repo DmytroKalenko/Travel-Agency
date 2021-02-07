@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 
 @font-face {
     font-family: "Valera"; 
@@ -87,8 +80,6 @@ body.lock{
    overflow: hidden;
 }
 
-
-
 .up-botton{
    position: fixed;
    top: 70px;
@@ -114,7 +105,6 @@ body.lock{
    width: 100%;
 }
 
-
 .background-popup{
    display: none;
    -webkit-box-pack: center;
@@ -129,7 +119,6 @@ body.lock{
    width: 100%;
    margin:0px auto  ;
    z-index: 3;
-  
 }
 
 
@@ -140,13 +129,10 @@ body.lock{
    display: grid;
    -ms-grid-rows: 100px 1fr;
    grid-template-rows: 100px 1fr;
-
-   background-color: rgb(255, 255, 255);
-   
-   width: 50%;
-   
-   
+   background-color: rgb(255, 255, 255); 
+   width: 50%;   
 }
+
 .title{
    display: -webkit-box;
    display: -ms-flexbox;
@@ -163,8 +149,6 @@ body.lock{
 
 .item{
    position: relative;
-   
- 
 }
 
 .item hr{
@@ -196,7 +180,6 @@ body.lock{
    padding: 2px 10px;
    font-size: 14pt;
    line-height: 1.3;
-  
 }
 
 .teams{
@@ -210,7 +193,6 @@ body.lock{
       -moz-column-gap: 20px;
            column-gap: 20px;
    row-gap: 20px;
-
 }
 
 .teams > *:nth-child(1){
@@ -222,19 +204,16 @@ body.lock{
 .teams > *:nth-child(2){
     -ms-grid-row: 1;
     -ms-grid-column: 3;
-
 }
 
 .teams > *:nth-child(3){
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-
 }
 
 .teams > *:nth-child(4){
     -ms-grid-row: 3;
     -ms-grid-column: 3;
-
 }
  
 #closemypop-up{
@@ -254,15 +233,10 @@ body.lock{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-
-
 body::-webkit-scrollbar{
    width: 0px;
    height: 0px;
 }
-
-
-
 
 .header{
    -ms-grid-column-span: 12;
@@ -274,8 +248,6 @@ body::-webkit-scrollbar{
    overflow: hidden; 
    z-index: 2;
 }
-
-
 
 video{
  position: absolute;
@@ -308,54 +280,45 @@ video{
    text-align: center;
 }
 
-
 .header .black_blok > *:nth-child(1){
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
-
 
 .header .black_blok > *:nth-child(2){
     -ms-grid-row: 1;
     -ms-grid-column: 2;
 }
 
-
 .header .black_blok > *:nth-child(3){
     -ms-grid-row: 1;
     -ms-grid-column: 3;
 }
-
 
 .header .black_blok > *:nth-child(4){
     -ms-grid-row: 2;
     -ms-grid-column: 1;
 }
 
-
 .header .black_blok > *:nth-child(5){
     -ms-grid-row: 2;
     -ms-grid-column: 2;
 }
-
 
 .header .black_blok > *:nth-child(6){
     -ms-grid-row: 2;
     -ms-grid-column: 3;
 }
 
-
 .header .black_blok > *:nth-child(7){
     -ms-grid-row: 3;
     -ms-grid-column: 1;
 }
 
-
 .header .black_blok > *:nth-child(8){
     -ms-grid-row: 3;
     -ms-grid-column: 2;
 }
-
 
 .header .black_blok > *:nth-child(9){
     -ms-grid-row: 3;
@@ -419,8 +382,6 @@ video{
    color: hotpink;
 }
 
-
-
 .header .center{
    -ms-grid-column-span: 3;
    grid-column: span 3;
@@ -438,8 +399,6 @@ video{
    color: #ffffffad;
    padding-bottom: 50px;
 }
-
-
 
 .header .title{
    -ms-grid-column-span: 3;
@@ -461,16 +420,11 @@ video{
    color:#ffffffad; ;
 }
 
-
-
-
 .main{
    -ms-grid-column: 3;
    -ms-grid-column-span: 8;
    grid-column: 3/11;
 }
-
-
 
 .main .ofers ul{
    display: -webkit-inline-box;
@@ -487,7 +441,6 @@ video{
    -webkit-box-align: center;
        -ms-flex-align: center;
            align-items: center;
-    
    font-size: 30pt;
    color: rgba(0, 0, 0, 0.788);
 }
@@ -495,8 +448,7 @@ video{
 .main .ofers .txt h2{
    margin: 60px 0;}
 
-.main .ofers .search 
-    {
+.main .ofers .search {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -587,8 +539,6 @@ video{
    border-radius: 60px;
 }
 
-
-
 .main .ofers .slots .item{
    display: -webkit-box;
    display: -ms-flexbox;
@@ -632,7 +582,6 @@ video{
    border-radius: var(--border_radius);
    color: #8e8f91;
    border: none;
-   
    background-color: white;
    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
            box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
@@ -663,22 +612,16 @@ video{
    font-size: 30px;
 }
 
-
 .main .about_city .city_name h1{
    margin: 50px 0 70px 0;
 }
 
 .main .about_city .info .slider3 .item{
-
    display: -ms-grid;
-
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
    position: relative;
 }
-
-
-
 
 /* Стрелка влево */
 .main .about_city .info .slider3 .slick-arrow.slick-prev{
@@ -686,7 +629,6 @@ video{
 /* Стрелка вправо */
 .main .about_city .info .slider3 .slick-arrow.slick-next{
 }
-
 .slick-dots{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -697,21 +639,15 @@ video{
             flex-direction: row;
     -webkit-column-gap: 15px;
        -moz-column-gap: 15px;
-            column-gap: 15px;
-   
-    
+            column-gap: 15px; 
 }
 .slick-dots li{
    list-style: none;
-   position: relative;
-   
-  
-  
+   position: relative; 
 }
 /* Активная точка */
 .slick-dots li.slick-active button{
   background-color: var(--hovercollor);
-
 }
 /* Элемент точки */
 .slick-dots li button{
@@ -723,10 +659,7 @@ video{
    border: none;
    padding: 0px;
    border-radius: 50%;
-  
 }
-
-
 
 .main .about_city .info h2{
     text-align: center;
@@ -801,7 +734,6 @@ video{
            filter: brightness(40%);  
 }
 
-
 .section .blok{
    height: 100%;
    width: 100%;
@@ -823,8 +755,7 @@ video{
    grid-row: 2/3;
 }
 
-.section .blok .txtblok h2{
-    
+.section .blok .txtblok h2{  
    font-size: 92pt;
    color: white;
 }
@@ -835,10 +766,8 @@ video{
    margin: 50px 0px ;
    border: none;
    border-radius: 3px;
-   background-color: var(--orange) ;
-    
+   background-color: var(--orange) ; 
 }
-
 
 .section .blok .txtblok input:hover{
    color: white;
@@ -885,7 +814,6 @@ video{
    font-weight: bold;
 }
 
-
 .footer p:first-child , .footer p:last-child{
    margin: 30px 0px;
 }
@@ -920,16 +848,14 @@ video{
 }
 
 .footer .blok .icons{
-
     display: -ms-grid;
-
     display: grid;
     -ms-grid-rows: 40px 20px 40px 20px 40px 20px 40px;
     grid-template-rows: repeat(4, 40px);
     color: black;
     row-gap: 20px;
-   
 }
+
 .footer .blok .icons ul li{
     display: inline;
     padding-left: 20px;
@@ -937,13 +863,11 @@ video{
 
 .footer .blok .icons h1{
    font-size: 29pt;
-   text-align: center;
-    
+   text-align: center;   
 }
 
 .footer .blok .icons p{
    font-size: 16pt;
- 
 }
 
 .footer .blok .icons .phone,.emial, .footer .blok .icons ul{
@@ -1089,7 +1013,6 @@ video{
    display: flex;
 }
 
-
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{
 
@@ -1098,7 +1021,7 @@ video{
 .slick-slide.slick-current .txtblokslider{
    background-color: rgba(243, 243, 243, 0)}
 
-   .slick-slide.slick-current .txtblokslider h1{
+.slick-slide.slick-current .txtblokslider h1{
        color: red;
    }
 
@@ -1164,12 +1087,6 @@ video{
 .slick-dots li button{}
 
 
-
-
-
-
-
-
 /*--POP up--*/
 
 .pop a {
@@ -1217,13 +1134,9 @@ video{
  display: grid;
  -ms-grid-rows: 250px;
  grid-template-rows: 250px;
- 
  -webkit-box-pack: center;
- 
-     -ms-flex-pack: center;
- 
-         justify-content: center;
-
+ -ms-flex-pack: center;
+ justify-content: center;
  top: -100%;
  right: 0;
  left: 50%;
@@ -1253,14 +1166,12 @@ video{
 .popup .about_trip{
    text-align:justify;
    line-height: 1.5;
-
 }
 
 .popup .about_trip span{
    color: black;
    font-weight: bold;
 }
-
 
 .popup .map iframe{
    width: 100%;
@@ -1269,16 +1180,12 @@ video{
 .popup input {
    margin: 30px 0 !important;
    border-radius: 3px !important;
-  
-   
 }
 
 .popup h1  {
    text-align: center;
    color: var(--hovercollor) !important;
 }
-
-
 
 .popup .price span{
    font-size: 55px;
@@ -1312,11 +1219,9 @@ video{
    display: -ms-flexbox;
    display: flex;
    -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
 }
-
-
 
 /* Слайдер */
 .slider2{
@@ -1327,27 +1232,22 @@ video{
 .slider2 img{
    padding: 0 !important;
    height: 100%;
-  
    border-radius: 0px !important;
 }
 
 
 .slider2 .slick-slider{
-  
- }
+}
 
- .slider2 .slider_item{
-    
-
-   height: 100%;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
+.slider2 .slider_item{
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
    -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
  }
-
 
  /* Слайдер запущен */
  .slider2 .slick-slider.slick-initialized{}
@@ -1355,8 +1255,8 @@ video{
  .slider2 .slick-slider.slick-dotted{}
  /* Ограничивающая оболочка */
  .slider2 .slick-list {
-     overflow: hidden;
-       height: 100%;
+    overflow: hidden;
+    height: 100%;
  }
  /* Лента слайдов */
  .slider2 .slick-track{
@@ -1394,7 +1294,6 @@ video{
  /* Элемент точки */
  .slider2 .slick-dots li button{}
 
-
 .header2{
    display: none;
    position: fixed;
@@ -1402,7 +1301,6 @@ video{
    top: 0;
    left: 0;
    z-index: 2;
-   
 }
 
 .header2::before{
@@ -1415,16 +1313,13 @@ video{
    background-color: #ffffff;
    z-index: 2;
    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-           box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .header_body{
    position: relative;
-   
    display: -webkit-box;
-   
    display: -ms-flexbox;
-   
    display: flex;
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
@@ -1437,8 +1332,7 @@ video{
 
 .header_body a{
   display: block;
-  height: 100%;
-  
+  height: 100%; 
 top: 0;
 left: 0;
 z-index: 3;
@@ -1469,19 +1363,16 @@ z-index: 3;
    background-color: rgba(255, 255, 255, 0);
 }
 
-   .header__burger{
-       position: relative;
-       width: 30px;
-       height: 20px;
-       z-index: 3;
-       margin-right: 25px;
-
+.header__burger{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    margin-right: 25px;
    } 
 
- 
-
-   .header__burger::before,
-   .header__burger::after{
+.header__burger::before,
+.header__burger::after{
       content: ''; 
       background-color: rgb(0, 0, 0);
       width: 100%;
@@ -1586,7 +1477,6 @@ z-index: 3;
    background-color: rgb(255, 0, 0);
 }
 
-
 .youtube img, .youtube .play-button {cursor: pointer;}
 
 .youtube img, .youtube iframe, .youtube .play-button, .youtube .play-button:before {position: absolute;}
@@ -1648,8 +1538,6 @@ z-index: 3;
    .blokmenu{
        display: block;
    }
-
-  
 
    .header .black_blok .logo{
        padding: 12px 0 0 0;
@@ -1954,10 +1842,7 @@ z-index: 3;
        grid-template-rows: 200px 80px 1fr 90px 90px;
        overflow: scroll;
        height: 86%;
-       
-
    }
-
 
    .slider3 .slick-arrow{
        background-color: rgba(226, 226, 238, 0);
@@ -1983,13 +1868,8 @@ z-index: 3;
            height: 100%;
            width: 100%;
        }
- 
- 
    }
  
-
-
-
  @media (min-width: 689px) and (max-width: 992px){
    .header2{
        display: block;
