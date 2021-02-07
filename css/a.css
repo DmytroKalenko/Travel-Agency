@@ -290,6 +290,7 @@ video{
 .header .title p{
     font-size: 19pt;
     padding-top: 90px;
+    color:#ffffffad; ;
 }
 
 
@@ -1012,13 +1013,13 @@ video{
   width: 26px;
   position: absolute;
   background-color:none;
-  background-image: url("../img/icons/close.png");
+  background-image: url("./img/icons/close.png");
   background-size: cover;
   border-radius: 50%;
 
 }
 .close:hover {
-    background-image: url("../img/close_icon_hover.png");
+    background-image: url("./img/close_icon_hover.png");
 }
 
 .popup .button {
