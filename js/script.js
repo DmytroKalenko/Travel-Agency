@@ -4,7 +4,7 @@ $(document).ready(function(){
      slidesToShow:7,   
      centerMode: true,
      focusOnSelect: true, 
-     waitForAnimate: true,
+     waitForAnimate: false,
      responsive: [
         {
             breakpoint: 2500,
