@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('.header__list').click(function(event) {
+    $('.header__list, .close, .overlay').click(function(event) {
         $('.header__burger,.header_menu').removeClass('active');
         $('body').removeClass('lock');}); 
 });
@@ -14,12 +14,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".buttonTeams").click(function(event) {
         $(".mypop-up").toggleClass('active');
-        $('body').toggleClass('lock2');}); 
+        $('body').toggleClass('lock');}); 
 });
 
 
 $(document).ready(function(){
     $(".button-green").click(function(event) {
         $(".popup").toggleClass('active');
-        $('body').toggleClass('lock3');}); 
+        $('body').toggleClass('lock');}); 
 });
+
+
