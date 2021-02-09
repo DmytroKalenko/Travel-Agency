@@ -21,3 +21,7 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $(".header__list").click(function(event) {
+        $(".header__burger,.header_menu").removeClass('active');}); 
+});
