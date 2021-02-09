@@ -130,7 +130,9 @@ body.lock{
    -ms-grid-rows: 100px 1fr;
    grid-template-rows: 100px 1fr;
    background-color: rgb(255, 255, 255); 
-   width: 50%;   
+   width: 50%;
+   height: 90%;
+   overflow: auto;   
 }
 
 .title{
