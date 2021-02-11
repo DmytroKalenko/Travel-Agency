@@ -36,12 +36,12 @@
   .wraper .logo{
     max-width: 120px;
     position: absolute;
-    top: 30px;
+    top: 20px;
   }
   
   .wraper a img{
-    max-width: 19px;
-    max-height: 22px;
+    max-width: 31px;
+    max-height: 40px;
   }
   
   .wraper input{
@@ -138,7 +138,6 @@
   
   footer {
     grid-template-rows: repeat(4, 1fr);
-    background: #262626;
     color: white;
   }
   
@@ -178,69 +177,135 @@
     display: inline-block;
   }
   
-  footer .apps img{
-    max-width: 120px;
-    max-height: 35px;
-  }
   
-  footer .medium {
-    margin-top: 37px;
-  }
-  
-  .blok1{
+  .footer{
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+ }
+ 
+ .footer p{
+    font-size: 30px;
+ }
+ 
+ .footer .txtcontact{
+    font-size: 32pt;
+    color: black;
+    font-weight: bold;
+ }
+ 
+ .footer p:first-child , .footer p:last-child{
+    margin: 30px 0px;
+ }
+ 
+ .footer #rights{
+    font-size: 12pt;
+ }
+ 
+ .footer img{
+    padding: 166px 0px 30px 0px ;
+ }
+ 
+ .footer .blok{
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-  }
-  
-  footer .medium .blok select {
-    height: 40px;
-    width: 227px;
-    background-color: #3B3B3B;
-    background-image: url("../img/world.svg");
-    background-size: 18px;
-    background-position: 16px  center ;
-    background-repeat: no-repeat;
-  
-    border-radius: 2px; 
-    outline: none;
-    cursor: pointer;
-    border: none;
-    color: #FFFFFF;
-    padding-left: 36px;
-  }
-  
-  footer .medium .blok select{
-    border: none;
-    box-shadow: none;
-  }
-  
-  footer .medium .blok p{
-    margin-top: 23px;
-  }
-  
-  footer .medium .blok span{
-    color: green;
-  }
-  
-  #world{
-    position: absolute;
-    top: 147px;
-    left: 10px
-  }
-  
-  footer .medium .blok #img{  
-    width: 15px;
-    height: 15px;
-  }
-  
-  footer .footercontainer .footergrid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
-    margin: 40px 0px 0px 0px;
-    padding-bottom: 40px;
-  }
-  
+    -ms-grid-columns: 1fr 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
+ }
+ 
+ .footer .blok iframe{
+    height: 100%;
+    width: 100%;
+ }
+ 
+ .footer .blok .icons{
+     display: -ms-grid;
+     display: grid;
+     -ms-grid-rows: 40px 20px 40px 20px 40px 20px 40px;
+     grid-template-rows: repeat(4, 40px);
+     color: black;
+     row-gap: 20px;
+ }
+ 
+ .footer .blok .icons ul li{
+     display: inline;
+     padding-left: 20px;
+ }
+ 
+ .footer .blok .icons h1{
+    font-size: 29pt;
+    text-align: center;   
+ }
+ 
+ .footer .blok .icons p{
+    font-size: 16pt;
+ }
+ 
+ .footer .blok .icons .phone,.emial, .footer .blok .icons ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+ }
+ 
+ .footer .blok .icons .phone img, 
+ .footer .blok .icons .emial img{
+     height: 25px;
+     width: 25px;
+ }
+ 
+ .footer .blok .icons img{
+     margin: 0px;
+     padding: 0px;
+     height: 60px;
+     width: 60px;
+     
+ }
+ 
+ .footer .blok .icons a{
+     position: relative;
+     text-decoration: none;
+     color: black;
+    font-size: 20pt;       
+ }
+ 
+ .footer .blok .icons .emial a:hover::after, .footer .blok .icons .phone a:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20%; top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgb(255, 255, 230); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+
+
+
   ul{
     list-style-type:none
   }
