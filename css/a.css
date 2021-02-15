@@ -1144,7 +1144,7 @@ video{
  left: 50%;
  z-index: 20;
  margin: 0;
- width: 54%;
+ width: 40%;
  /* фиксированное позиционирование, окно стабильно при прокрутке */
  position: fixed;
  padding: 15px;
@@ -2127,6 +2127,7 @@ z-index: 3;
 
    .main .ofers .slots .popup {
        font-size: 12pt;
+       height: 92%;
    }
 
    .main .ofers .slots .popup h1{
@@ -2296,6 +2297,8 @@ z-index: 3;
 
    .main .ofers .slots .popup {
        font-size: 12pt;
+       height: 86%;
+        overflow: scroll;
    }
 
    .main .ofers .slots .popup h1{
