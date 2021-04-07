@@ -58,7 +58,25 @@ $(window).on("scroll", function() {
     } else {
         UPbtn.fadeOut();
     }
-})
+});
 UPbtn.click(function() {
     $("html, body").animate({ scrollTop: 0 }, 100)
 });
+
+
+///Add_backgroundcolot_to_top_nav
+
+
+const TopMenu = $('.header2');
+const screenWidth = window.screen.width;
+$(window).on("scroll", function() {
+    if ($(this).scrollTop() >= 20 && screenWidth < 688) {
+        TopMenu.fadeIn();
+    } else {
+        TopMenu.fadeOut();
+    }
+});
+
+//add_noScrool__when_open_burger_menu
+
+// const BurgerMenu = document.querySelector('.header__burger');
