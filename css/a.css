@@ -1259,6 +1259,7 @@ video {
     color: white;
     border: 1px solid var(--hovercollor);
     background: var(--hovercollor);
+    transition: all .5s;
 }
 
 .overlay {
@@ -1659,7 +1660,6 @@ video {
     background-color: #000;
     margin-bottom: 30px;
     position: relative;
-    padding-top: 56.25%;
     overflow: hidden;
     cursor: pointer;
     width: 90%;
