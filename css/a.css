@@ -856,6 +856,7 @@ video {
     color: white;
     border: 1px solid var(--hovercollor);
     background: var(--hovercollor);
+    transition: all .5s;
 }
 
 .section .blok .txtblok p {
