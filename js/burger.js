@@ -20,6 +20,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('.close, .overlay').click(function(event) {
+        $(".popup").toggleClass('active');
+    });
+});
+
+$(document).ready(function() {
     $(".button-green").click(function(event) {
         $(".popup").toggleClass('active');
         $('body').toggleClass('lock');

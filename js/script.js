@@ -48,7 +48,14 @@ $(document).ready(function() {
     });
 });
 
-var mixer = mixitup('.slots');
+
+
+
+var mixer = mixitup('.slots', {
+    animation: {
+        effects: 'fade scale(0.7)'
+    },
+});
 
 ///Add__Button__UP
 var UPbtn = $('.up-botton')
