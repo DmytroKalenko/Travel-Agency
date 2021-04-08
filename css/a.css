@@ -450,6 +450,8 @@ video {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .main .ofers .txt {
@@ -520,7 +522,7 @@ video {
     justify-content: space-around;
 }
 
-.main .ofers .menu ul li {
+.main .ofers .menu ul li+li {
     padding-left: 10px;
 }
 
@@ -1850,8 +1852,10 @@ video {
         margin: 35px 0;
         font-size: 18pt;
     }
+    .main .ofers .search {
+        margin: 0 20px;
+    }
     .main .ofers .search input {
-        width: auto;
         font-size: 14pt;
     }
     .main .ofers .search button {
@@ -1861,10 +1865,16 @@ video {
     .main .ofers .menu {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
     .main .ofers .menu ul li input {
         height: 30px;
         margin: 5px 0;
+    }
+    .main .ofers .menu ul li button {
+        margin: 13px 3px;
     }
     .main .ofers .slots {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -2159,9 +2169,17 @@ video {
         margin: 35px 0;
         font-size: 25pt;
     }
+    .main .ofers .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
     .main .ofers .menu ul li input {
         height: 35px;
         margin: 30px 0;
+    }
+    .main .ofers .menu ul li button {
+        margin: 13px 3px;
     }
     .main .ofers .slots {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
